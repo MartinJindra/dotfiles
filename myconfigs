@@ -1,0 +1,16 @@
+#/bin/sh
+
+# set resolution to fullhd
+xrandr --output eDP1 --mode 1920x1080
+
+# set german keyboard layout
+setxkbmap -layout de
+
+# enable touch-based tap
+xinput set-prop 15 326 1 
+xinput set-prop 15 324 1
+
+# set permissions to change screen brightness
+sudo chmod 664 /sys/class/backlight/intel_backlight/brightness
+sudo chown root:video /sys/class/backlight/intel_backlight/brightness
+
