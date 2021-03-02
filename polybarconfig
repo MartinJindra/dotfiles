@@ -43,7 +43,7 @@ index-sort = true
 wrapping-scroll = false
 
 label-mode-padding = 2
-label-mode-foreground = #282A2E
+label-mode-foreground = #C5C8C6
 label-mode-background = #1D1F21
 
 label-focused = %name% 
