@@ -43,7 +43,7 @@ ZSH_THEME="awesomepanda"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -107,10 +107,10 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias vim="nvim"
-alias zshconfig="vim ~/.zshrc"
-alias i3config="vim ~/.config/i3/config"
-alias polybarconfig="vim ~/.config/polybar/config"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+alias zshconfig="nvim ~/.zshrc"
+alias i3config="nvim ~/.config/i3/config"
+alias polybarconfig="nvim ~/.config/polybar/config"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 # Environment variables
 export cachepath=/var/cache/pacman/pkg
