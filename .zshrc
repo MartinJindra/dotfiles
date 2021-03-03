@@ -113,7 +113,7 @@ alias polybarconfig="nvim ~/.config/polybar/config"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 # Environment variables
-export cachepath=/var/cache/pacman/pkg
+export pacpath=/var/cache/pacman/pkg
 export EDITOR=/usr/bin/nvim
 export TERM=xterm-kitty
 #export QT_STYLE_OVERRIDE=adwaita-dark
