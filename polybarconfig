@@ -25,7 +25,7 @@ font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = i3 
 modules-center = date
-modules-right = temperature battery backlight pulseaudio wlan eth powermenu
+modules-right = battery backlight pulseaudio wlan eth powermenu
 
 tray-position = right
 ;tray-padding =
@@ -65,33 +65,33 @@ label-urgent = %name%
 label-urgent-background = #BA2922
 label-urgent-padding = 2
 
-[module/temperature]
-type = internal/temperature
+;[module/temperature]
+;type = internal/temperature
 
 ; Seconds to sleep between updates
 ; Default: 1
-interval = 0.5
+;interval = 0.5
 
 ; Thermal zone to use
 ; To list all the zone types, run 
 ; $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
 ; Default: 0
-thermal-zone = 0
+;thermal-zone = 0
 
 ; Full path of temperature sysfs path
 ; Use `sensors` to find preferred temperature source, then run
 ; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
 ; to find path to desired file
 ; Default reverts to thermal zone setting
-hwmon-path = ${home.martin..config.polybar.temp_core}
+;hwmon-path = ${home.martin..config.polybar.temp_core}
 
 ; Base temperature for where to start the ramp (in degrees celsius)
 ; Default: 0
-base-temperature = 20
+;base-temperature = 20
 
 ; Threshold temperature to display warning label (in degrees celsius)
 ; Default: 80
-warn-temperature = 60
+;warn-temperature = 60
 
 [module/backlight]
 type = internal/backlight
