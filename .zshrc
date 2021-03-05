@@ -117,7 +117,7 @@ export pacpath=/var/cache/pacman/pkg
 export EDITOR=/usr/bin/nvim
 export TERM=xterm-kitty
 #export QT_STYLE_OVERRIDE=adwaita-dark
-export QT_STYLE_OVERRIDE=kvantum
+#export QT_STYLE_OVERRIDE=kvantum
 
 # Kitty terminal configuration
 autoload -Uz compinit
