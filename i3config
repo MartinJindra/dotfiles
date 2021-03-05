@@ -96,9 +96,9 @@ set $ws8  messages
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1 
-# bindsym $mod+2 workspace $ws2; exec [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
+bindsym $mod+2 workspace $ws2; exec [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
 # bindsym $mod+2 workspace $ws2; exec [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/brave
-bindsym $mod+2 workspace $ws2; exec [ $(ps h -C firefox | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
+# bindsym $mod+2 workspace $ws2; exec [ $(ps h -C firefox | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
 bindsym $mod+3 workspace $ws3; exec [ $(ps h -C kitty | wc -l) = 0 ] && /usr/bin/kitty
 bindsym $mod+4 workspace $ws4; exec [ $(ps h -C nautilus | wc -l) = 0 ] && /usr/bin/nautilus
 bindsym $mod+5 workspace $ws5; exec /usr/bin/joplin-desktop
@@ -158,8 +158,7 @@ for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 for_window [class="UXTerm"] floating enable 
 for_window [class="XTerm"] floating enable 
-# for_window [class="qutebrowser"] floating enable
-for_window [class="gnome-calculator"] floating enable
+for_window [title="Taschenrechner"] floating enable
 for_window [class="kitty"] border none
 
 # switch to workspace with urgent window automatically

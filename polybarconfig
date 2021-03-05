@@ -39,7 +39,7 @@ cursor-scroll = ns-resize
 type = internal/i3
 
 format = <label-state> <label-mode>
-index-sort = true
+index-sort = false
 wrapping-scroll = false
 
 label-mode-padding = 2
@@ -222,7 +222,7 @@ type = internal/pulseaudio
 
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
 ; If not, uses default sink
-sink = alsa_output.pci-0000_00_1f.3.analog-stereo 
+sink = pactl info | sed -En 's/Standard-Ziel: (.*)/\1/p' 
 
 ; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
 ; Default: true
