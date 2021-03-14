@@ -39,7 +39,8 @@ cursor-scroll = ns-resize
 type = internal/i3
 
 format = <label-state> <label-mode>
-index-sort = false
+index-sort = true
+strip-wsnumbers = true
 wrapping-scroll = false
 
 label-mode-padding = 2
