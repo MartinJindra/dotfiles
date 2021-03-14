@@ -111,6 +111,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias i3config="nvim ~/.config/i3/config"
 alias polybarconfig="nvim ~/.config/polybar/config"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias lsblk="lsblk -f"
 
 # Environment variables
 export pacpath=/var/cache/pacman/pkg
