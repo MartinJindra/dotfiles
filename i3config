@@ -112,7 +112,7 @@ bindsym $mod+4 workspace $ws4; exec --no-startup-id [ $(ps h -C nautilus | wc -l
 #bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/joplin-desktop
 bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/QOwnNotes
 #bindsym $mod+6 workspace $ws6; exec --no-startup-id [ $(ps h -C qutebrowser | wc -l) = 0 ] && /usr/bin/qutebrowser https://lxcloud.derchef.site/apps/dashboard
-bindsym $mod+6 workspace $ws6; exec --no-startup-id [ $(ps h -C brave | wc -l) = 0 ] && /usr/lib/brave-bin/brave --new-window "https://lxcloud.derchef.site/apps/dashboard"
+bindsym $mod+6 workspace $ws6; exec --no-startup-id /usr/lib/brave-bin/brave --new-window "https://lxcloud.derchef.site/apps/dashboard"
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 
