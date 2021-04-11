@@ -109,8 +109,8 @@ bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
 bindsym $mod+3 workspace $ws3; exec --no-startup-id [ $(ps h -C kitty | wc -l) = 0 ] && /usr/bin/kitty
 bindsym $mod+4 workspace $ws4; exec --no-startup-id [ $(ps h -C nautilus | wc -l) = 0 ] && /usr/bin/nautilus
-#bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/joplin-desktop
-bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/QOwnNotes
+bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/joplin-desktop
+#bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/QOwnNotes
 #bindsym $mod+6 workspace $ws6; exec --no-startup-id [ $(ps h -C qutebrowser | wc -l) = 0 ] && /usr/bin/qutebrowser https://lxcloud.derchef.site/apps/dashboard
 bindsym $mod+6 workspace $ws6; exec --no-startup-id /usr/lib/brave-bin/brave --new-window "https://lxcloud.derchef.site/apps/dashboard"
 bindsym $mod+7 workspace $ws7
@@ -233,6 +233,7 @@ mode "resize" {
 exec_always --no-startup-id nitrogen --restore; sleep 1; #picom -b --experimental-backend
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id element-desktop --hidden
+exec_always --no-startup-id joplin-desktop
 
 exec --no-startup-id pamac-tray
 #exec --no-startup-id clipit 
