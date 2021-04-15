@@ -121,6 +121,11 @@ assign [class="kitty"] $ws3
 assign [class="Nautilus"] $ws4
 assign [class="QOwnNotes"] $ws5
 assign [class="Joplin"] $ws5
+assign [class="Element"] $ws8
+assign [class="Evolution"] $ws8
+assign [class="Teams"] $ws8
+assign [class="Signal"] $ws8
+assign [class="Telegram"] $ws8
 
 # Move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace $ws1
