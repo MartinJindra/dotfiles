@@ -117,7 +117,7 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 
 # assign applications to workspaces
-assign [class="kitty"] $ws3
+#assign [class="kitty"] $ws3
 assign [class="Nautilus"] $ws4
 assign [class="QOwnNotes"] $ws5
 assign [class="Joplin"] $ws5
