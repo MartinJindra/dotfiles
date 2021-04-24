@@ -121,7 +121,6 @@ bindsym $mod+8 workspace $ws8
 assign [class="Nautilus"] $ws4
 assign [class="QOwnNotes"] $ws5
 assign [class="Joplin"] $ws5
-assign [title="Kalender"] $ws5
 assign [class="Element"] $ws8
 assign [class="Evolution"] $ws8
 assign [class="Teams"] $ws8
