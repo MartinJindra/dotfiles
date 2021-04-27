@@ -52,7 +52,7 @@ mv -v ~/.config/i3/config ~/.config/i3/config.bak
 cp -v $(pwd)/i3config ~/.config/i3/config
 ```
 
-2. **Polybar**
+2. **Polybar (Laptop)**
 
 ```bash
 mkdir -p ~/.config/polybar
@@ -60,4 +60,22 @@ mv -v ~/.config/polybar/config ~/.config/polybar/config.bak
 cp -v $(pwd)/polybarconfig ~/.config/polybar/config
 cp -v $(pwd)/temp_core ~/.config/polybar/
 cp -v $(pwd)/i3wmthemer_bar_launch.sh ~/.config/polybar
+```
+
+3. **Polybar (PC)**
+
+```bash
+mkdir -p ~/.config/polybar
+mv -v ~/.config/polybar/config ~/.config/polybar/config.bak
+cp -v $(pwd)/polybarconfig ~/.config/polybar/config
+cp -v $(pwd)/temp_core ~/.config/polybar/
+cp -v $(pwd)/i3wmthemer_bar_launch.sh ~/.config/polybar
+```
+
+4. **Kitty Terminal**
+
+```bash
+mkdir -p ~/.config/kitty
+mv -v ~/.config/kitty.conf ~/.config/kitty/kitty.conf.bak
+cp -v $(pwd)/kittyconfig ~/.config/kitty/kitty.conf
 ```
