@@ -24,16 +24,20 @@ Required packages:
 
 3. `polybar`
 
-4. `clip-it`
+4. `clipit`
 
-5. `i3-exit`
+5. `i3exit`
 
 6. `nitrogen`
 
 7. `picom-jonaburg-git`
 
+8. `xorg-xbacklight`
+
+9. `playerctl`
+
 ```bash
-paru -S i3 i3-gnome polybar clip-it i3-exit nitrogen
+paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git xorg-xbacklight playerctl
 ```
 
 ## Copy the configuration files
@@ -43,8 +47,17 @@ Copy the files to the specific locations
 1. **i3**
 
 ```bash
+mkdir -p ~/.config/i3
 mv -v ~/.config/i3/config ~/.config/i3/config.bak
 cp -v $(pwd)/i3config ~/.config/i3/config
 ```
 
-2. 
+2. **Polybar**
+
+```bash
+mkdir -p ~/.config/polybar
+mv -v ~/.config/polybar/config ~/.config/polybar/config.bak
+cp -v $(pwd)/polybarconfig ~/.config/polybar/config
+cp -v $(pwd)/temp_core ~/.config/polybar/
+cp -v $(pwd)/i3wmthemer_bar_launch.sh ~/.config/polybar
+```
