@@ -38,8 +38,10 @@ Required packages:
 
 10. `pamixer`
 
+11. `pavucontrol`
+
 ```bash
-paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git xorg-xbacklight playerctl pamixer
+paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git xorg-xbacklight playerctl pamixer pavucontrol
 ```
 
 ## Copy the configuration files
