@@ -18,18 +18,33 @@ For an easy installation an AUR helper is recommended like [yay](https://aur.arc
 
 Required packages:
 
-1. **i3**, is a group of packages (i3-gaps, i3-wm, i3block, i3lock and i3status) and will replace i3-wm for i3-gaps. This is recommended.
+1. `i3`, is a group of packages (i3-gaps, i3-wm, i3block, i3lock and i3status) and will replace i3-wm for i3-gaps. This is recommended.
 
-2. **i3-gnome**
+2. `i3-gnome`
 
-3. **polybar**
+3. `polybar`
 
-4. **clip-it**
+4. `clip-it`
 
-5. **i3-exit**
+5. `i3-exit`
+
+6. `nitrogen`
+
+7. `picom-jonaburg-git`
 
 ```bash
-paru -S i3 i3-gnome polybar clip-it i3-exit
+paru -S i3 i3-gnome polybar clip-it i3-exit nitrogen
 ```
 
+## Copy the configuration files
 
+Copy the files to the specific locations
+
+1. **i3**
+
+```bash
+mv -v ~/.config/i3/config ~/.config/i3/config.bak
+cp -v $(pwd)/i3config ~/.config/i3/config
+```
+
+2. 
