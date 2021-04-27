@@ -36,8 +36,10 @@ Required packages:
 
 9. `playerctl`
 
+10. `pamixer`
+
 ```bash
-paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git xorg-xbacklight playerctl
+paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git xorg-xbacklight playerctl pamixer
 ```
 
 ## Copy the configuration files
