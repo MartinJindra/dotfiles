@@ -1,6 +1,8 @@
 set $mod Mod4
+set $terminal kitty
+set $files nemo
 
-default_border pixel 1
+default_border pixel 0
 default_floating_border normal
 
 hide_edge_borders none
@@ -13,7 +15,7 @@ font xft:URWGothic-Book 11
 
 floating_modifier $mod
 
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec --no-startup-id $terminal
 
 # Window kill command
 bindsym $mod+x kill
@@ -85,28 +87,48 @@ bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
 # workspaces
-set $ws1  home
-set $ws2 @ web
-set $ws3  term
-set $ws4  file
-set $ws5 ¶ notes
-set $ws6  cloud
-set $ws7 [] code
-set $ws8  messages
+set $ws1 1: home
+set $ws2 2:@ web
+set $ws3 3: term
+set $ws4 4: file
+set $ws5 5:¶ notes
+set $ws6 6: cloud
+set $ws7 7:[] code
+set $ws8 8: messages
+#set $ws1  home
+#set $ws2 @ web
+#set $ws3  term
+#set $ws4  file
+#set $ws5 ¶ notes
+#set $ws6  cloud
+#set $ws7 [] code
+#set $ws8  messages
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1 
-bindsym $mod+2 workspace $ws2; exec [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
-# bindsym $mod+2 workspace $ws2; exec [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/brave
-# bindsym $mod+2 workspace $ws2; exec [ $(ps h -C firefox | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
-bindsym $mod+3 workspace $ws3; exec [ $(ps h -C kitty | wc -l) = 0 ] && /usr/bin/kitty
-bindsym $mod+4 workspace $ws4; exec [ $(ps h -C nautilus | wc -l) = 0 ] && /usr/bin/nautilus
-bindsym $mod+5 workspace $ws5; exec /usr/bin/joplin-desktop
-bindsym $mod+6 workspace $ws6; exec [ $(ps h -C qutebrowser | wc -l) = 0 ] && /usr/bin/qutebrowser https://derchef.site/nextcloud/index.php/apps/dashboard
-# bindsym $mod+6 workspace $ws6; exec [ $(ps h -C brave | wc -l) = 0 ] && /usr/lib/brave-bin/brave --profile-directory=Default --app-id=ggfnlagfplloajmiophkdlfhajoeiake
+#bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
+#bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/brave
+bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
+bindsym $mod+3 workspace $ws3; exec --no-startup-id /usr/bin/$terminal
+#bindsym $mod+3 workspace $ws3; exec --no-startup-id [ $(ps h -C $terminal | wc -l) = 0 ] && /usr/bin/$terminal
+bindsym $mod+4 workspace $ws4; exec --no-startup-id [ $(ps h -C $files | wc -l) = 0 ] && /usr/bin/$files
+bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/joplin-desktop
+#bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/QOwnNotes
+#bindsym $mod+6 workspace $ws6; exec --no-startup-id [ $(ps h -C qutebrowser | wc -l) = 0 ] && /usr/bin/qutebrowser https://lxcloud.derchef.site/apps/dashboard
+bindsym $mod+6 workspace $ws6; exec --no-startup-id /usr/bin/brave --new-window "https://lxcloud.derchef.site/apps/dashboard"
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
-# bindsym $mod+8 workspace $ws8; exec /usr/bin/discord; exec /usr/bin/signal-desktop; exec /usr/bin/element-desktop --hidden
+
+# assign applications to workspaces
+#assign [class="$terminal"] $ws3
+assign [class="pcmanfm"] $ws4
+assign [class="QOwnNotes"] $ws5
+assign [class="Joplin"] $ws5
+assign [class="Element"] $ws8
+assign [class="Evolution"] $ws8
+assign [class="Teams"] $ws8
+assign [class="Signal"] $ws8
+assign [class="Telegram"] $ws8
 
 # Move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace $ws1
@@ -160,6 +182,7 @@ for_window [class="UXTerm"] floating enable
 for_window [class="XTerm"] floating enable 
 for_window [title="Taschenrechner"] floating enable
 for_window [class="kitty"] border none
+for_window [class="Tor Browser"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -215,13 +238,24 @@ mode "resize" {
 }
 
 # Autostart applications
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-exec --no-startup-id nm-applet
-exec joplin-desktop
-exec element-desktop --hidden
+exec_always --no-startup-id picom -b --experimental-backend
+exec_always --no-startup-id sleep 1; nitrogen --set-tiled --random /usr/share/backgrounds/dt_backgrounds/ ;
 
-exec --no-startup-id pamac-tray
-#exec --no-startup-id clipit 
+output HDMI-A-1 pos 0 0 mode 1920x1080@120.000Hz
+output DP-2 pos 1920 0 mode 1920x1080@143.981Hz
+
+# set keyboard layout
+input * {
+    xkb_layout "de"
+}
+
+exec_always --no-startup-id nextcloud
+exec_always --no-startup-id nm-applet
+exec_always --no-startup-id element-desktop --hidden
+exec_always --no-startup-id joplin-desktop
+
+exec_always --no-startup-id pamac-tray
+exec_always --no-startup-id clipit 
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 #exec_always --no-startup-id $HOME/.config/polybar/i3wmthemer_bar_launch.sh
@@ -233,7 +267,7 @@ exec_always --no-startup-id fix_xcursor
 #client.urgent: '#C5C8C6 #1D1F21 #C5C8C6 #5F819D #5F819D'
 #client.placeholder: '#C5C8C6 #1D1F21 #C5C8C6 #5F819D #5F819D'
 
-client.background #1D1F21
+#client.background #1D1F21
 
 # Gaps
 gaps inner 10
@@ -279,8 +313,9 @@ mode "$mode_gaps_outer" {
 }
 
 # set power-manager and volume control
-exec --no-startup-id mate-power-manager
-exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+exec_always --no-startup-id mate-power-manager
+exec_always --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 10
 bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 10
