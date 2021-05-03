@@ -1,6 +1,6 @@
 set $mod Mod4
 set $terminal kitty
-set $files pcmanfm
+set $files nemo
 
 default_border pixel 0
 default_floating_border normal
