@@ -32,16 +32,16 @@ Required packages:
 
 7. `picom-jonaburg-git`
 
-8. `xorg-xbacklight`
+8. `playerctl`
 
-9. `playerctl`
+9. `pamixer`
 
-10. `pamixer`
+10. `pavucontrol`
 
-11. `pavucontrol`
+11. `light`
 
 ```bash
-paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git xorg-xbacklight playerctl pamixer pavucontrol
+paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git playerctl pamixer pavucontrol light
 ```
 
 ## Copy the configuration files

@@ -1,7 +1,7 @@
 set $mod Mod4
 
-default_border pixel 1
-default_floating_border normal
+new_window pixel 1
+new_float normal
 
 hide_edge_borders none
 
@@ -238,7 +238,7 @@ mode "resize" {
 # Autostart applications
 exec_always --no-startup-id picom -b --experimental-backend
 exec_always --no-startup-id sleep 1; xrandr --output eDP1 --mode 1920x1080
-exec_always --no-startup-id sleep 1; nitrogen --restore; sleep 1; setxkbmap -layout de; xinput set-prop 15 326 1; xinput set-prop 15 324 1
+exec_always --no-startup-id sleep 1; nitrogen --set-scaled --random /usr/share/backgrounds/dwt1_wallpapers; sleep 1; setxkbmap -layout de; xinput set-prop 15 326 1; xinput set-prop 15 324 1
 
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id element-desktop --hidden
@@ -312,8 +312,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 10
 bindsym XF86AudioMute exec --no-startup-id pamixer -t
 
 # set brightness control 
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10 # decrease screen brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
