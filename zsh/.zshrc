@@ -114,7 +114,7 @@ alias lsblk="lsblk -f"
 
 # Environment variables
 export pacpath=/var/cache/pacman/pkg
-export EDITOR="nvim
+export EDITOR="nvim"
 export TERM=xterm-kitty
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
