@@ -59,6 +59,13 @@ pamac install --no-confirm i3-gaps i3blocks i3lock i3status nitrogen playerctl p
 pamac build --no-confirm i3-gnome polybar clipit i3exit picom-jonaburg-git
 ```
 
+**pamac**
+
+```bash
+trizen -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git playerctl pamixer pavucontrol light
+```
+
+
 ## Copy the configuration files
 
 Copy the files to the specific locations
