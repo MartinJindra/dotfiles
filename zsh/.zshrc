@@ -106,7 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
 alias i3config="nvim ~/.config/i3/config"
 alias polybarconfig="nvim ~/.config/polybar/config"
@@ -115,7 +114,7 @@ alias lsblk="lsblk -f"
 
 # Environment variables
 export pacpath=/var/cache/pacman/pkg
-export EDITOR=/usr/bin/nvim
+export EDITOR="nvim
 export TERM=xterm-kitty
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
