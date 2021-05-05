@@ -20,17 +20,17 @@ Required packages:
 
 1. `i3`, is a group of packages (i3-gaps, i3-wm, i3block, i3lock and i3status) and will replace i3-wm for i3-gaps. This is recommended.
 
-2. `i3-gnome`
+2. `i3-gnome` (AUR)
 
-3. `polybar`
+3. `polybar` (AUR)
 
-4. `clipit`
+4. `clipit` (AUR)
 
-5. `i3exit`
+5. `i3exit` (AUR)
 
 6. `nitrogen`
 
-7. `picom-jonaburg-git`
+7. `picom-jonaburg-git` (AUR)
 
 8. `playerctl`
 
@@ -40,8 +40,23 @@ Required packages:
 
 11. `light`
 
+**yay**
+
+```bash
+yay -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git playerctl pamixer pavucontrol light
+```
+
+**paru**
+
 ```bash
 paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git playerctl pamixer pavucontrol light
+```
+
+**pamac**
+
+```bash
+pamac install --no-confirm i3-gaps i3blocks i3lock i3status nitrogen playerctl pamixer pavucontrol light
+pamac build --no-confirm i3-gnome polybar clipit i3exit picom-jonaburg-git
 ```
 
 ## Copy the configuration files
