@@ -28,41 +28,43 @@ Required packages:
 
 5. `i3exit` (AUR)
 
-6. `nitrogen`
+6. `picom-jonaburg-git` (AUR)
 
-7. `picom-jonaburg-git` (AUR)
+7. `rofi`
 
-8. `playerctl`
+8. `nitrogen`
 
-9. `pamixer`
+9. `playerctl`
 
-10. `pavucontrol`
+10. `pamixer`
 
-11. `light`
+11. `pavucontrol`
+
+12. `light`
 
 **yay**
 
 ```bash
-yay -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git playerctl pamixer pavucontrol light
+yay -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light
 ```
 
 **paru**
 
 ```bash
-paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git playerctl pamixer pavucontrol light
+paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light
 ```
 
 **pamac**
 
 ```bash
-pamac install --no-confirm i3-gaps i3blocks i3lock i3status nitrogen playerctl pamixer pavucontrol light
+pamac install --no-confirm i3-gaps i3blocks i3lock i3status rofi nitrogen playerctl pamixer pavucontrol light
 pamac build --no-confirm i3-gnome polybar clipit i3exit picom-jonaburg-git
 ```
 
 **trizen**
 
 ```bash
-trizen -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit nitrogen picom-jonaburg-git playerctl pamixer pavucontrol light
+trizen -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light
 ```
 
 
