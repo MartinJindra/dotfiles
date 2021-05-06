@@ -4,10 +4,10 @@
 # requires https://github.com/jonaburg/picom
 # (These are also the default values)
 transition-length = 300
-transition-pow-x = 0.1
-transition-pow-y = 0.1
-transition-pow-w = 0.1
-transition-pow-h = 0.1
+transition-pow-x = 0.5
+transition-pow-y = 0.5
+transition-pow-w = 0.5
+transition-pow-h = 0.5
 size-transition = true
 
 
@@ -15,7 +15,7 @@ size-transition = true
 #             Corners           #
 #################################
 # requires: https://github.com/sdhand/compton or https://github.com/jonaburg/picom
-corner-radius = 10.0;
+corner-radius = 0;
 rounded-corners-exclude = [
   #"window_type = 'normal'",
   "class_g = 'awesome'",
@@ -137,7 +137,7 @@ fade-in-step = 0.03;
 fade-out-step = 0.03;
 
 # The time between steps in fade step, in milliseconds. (> 0, defaults to 10)
-# fade-delta = 10
+fade-delta = 5
 
 # Specify a list of conditions of windows that should not be faded.
 # don't need this, we disable fading for all normal windows with wintypes: {}
@@ -213,7 +213,7 @@ opacity-rule = [
   "80:class_g     = 'Polybar'",
   "100:class_g    = 'code-oss'",
   "100:class_g    = 'Meld'",
-  "70:class_g     = 'TelegramDesktop'",
+  "100:class_g    = 'TelegramDesktop'",
   "90:class_g     = 'Joplin'",
   "100:class_g    = 'firefox'",
   "100:class_g    = 'Thunderbird'",
@@ -261,7 +261,7 @@ blur: {
   # requires: https://github.com/ibhagwan/picom
   method = "kawase";
   #method = "kernel";
-  strength = 7;
+  strength = 0;
   # deviation = 1.0;
   # kernel = "11x11gaussian";
   background = false;
