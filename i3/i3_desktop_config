@@ -314,10 +314,6 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 10
 bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 10
 bindsym XF86AudioMute exec --no-startup-id pamixer -t
 
-# set brightness control 
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease screen brightness
-
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
