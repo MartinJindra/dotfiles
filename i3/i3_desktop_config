@@ -181,6 +181,7 @@ for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 for_window [class="UXTerm"] floating enable 
 for_window [class="XTerm"] floating enable 
+for_window [class="Tilix"] floating enable 
 for_window [title="Taschenrechner"] floating enable
 for_window [class="kitty"] border none
 for_window [class="Tor Browser"] floating enable
