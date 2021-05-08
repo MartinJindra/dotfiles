@@ -2,7 +2,8 @@ set $mod Mod4
 set $terminal kitty
 set $files nemo
 
-default_border pixel 0
+default_border pixel 1
+new_window 1pixel
 default_floating_border normal
 
 hide_edge_borders none
@@ -115,7 +116,7 @@ bindsym $mod+4 workspace $ws4; exec --no-startup-id [ $(ps h -C $files | wc -l) 
 bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/joplin-desktop
 #bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/QOwnNotes
 #bindsym $mod+6 workspace $ws6; exec --no-startup-id [ $(ps h -C qutebrowser | wc -l) = 0 ] && /usr/bin/qutebrowser https://lxcloud.derchef.site/apps/dashboard
-bindsym $mod+6 workspace $ws6; exec --no-startup-id /usr/bin/brave --new-window "https://lxcloud.derchef.site/apps/dashboard"
+bindsym $mod+6 workspace $ws6; exec --no-startup-id firefox-developer-edition --new-window "https://lxcloud.derchef.site"
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 
