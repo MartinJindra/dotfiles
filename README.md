@@ -1,5 +1,7 @@
 # Dotfiles
 
+Please keep in mind that these files are constantly changing and the experience may vary. 
+
 This repository stores all my configuration files for my custom i3wm-desktop. 
 
 I personally did not write all these files by hand. I used some awesome projects to help create my personal desktop.
