@@ -1,6 +1,6 @@
 # Dotfiles
 
-Please keep in mind that these files are constantly changing and the experience may vary. 
+Please keep in mind that these files are <u>constantly changing</u> and the <u>experience may vary</u>. 
 
 This repository stores all my configuration files for my custom i3wm-desktop. 
 
@@ -68,7 +68,6 @@ pamac build --no-confirm i3-gnome polybar clipit i3exit picom-jonaburg-git
 ```bash
 trizen -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light
 ```
-
 
 ## Copy the configuration files
 
