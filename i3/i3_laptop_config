@@ -1,7 +1,10 @@
 set $mod Mod4
+set $terminal kitty
+set $files nautilus
 
-new_window pixel 1
-new_float normal
+default_border pixel 1
+new_window 1pixel
+default_floating_border normal
 
 hide_edge_borders none
 
@@ -13,7 +16,7 @@ font xft:URWGothic-Book 11
 
 floating_modifier $mod
 
-bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Return exec --no-startup-id $terminal
 
 # Window kill command
 bindsym $mod+x kill
@@ -106,10 +109,10 @@ set $ws8 8: messages
 bindsym $mod+1 workspace $ws1 
 #bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
 #bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/brave
-bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && [ $(ps h -C librewolf | wc -l) = 0 ] && [ $(ps h -C chromium | wc -l) = 0 ]&& /usr/bin/firefox-developer-edition
-bindsym $mod+3 workspace $ws3; exec --no-startup-id /usr/bin/kitty
-#bindsym $mod+3 workspace $ws3; exec --no-startup-id [ $(ps h -C kitty | wc -l) = 0 ] && /usr/bin/kitty
-bindsym $mod+4 workspace $ws4; exec --no-startup-id [ $(ps h -C nautilus | wc -l) = 0 ] && /usr/bin/nautilus
+bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
+bindsym $mod+3 workspace $ws3; exec --no-startup-id /usr/bin/$terminal
+#bindsym $mod+3 workspace $ws3; exec --no-startup-id [ $(ps h -C $terminal | wc -l) = 0 ] && /usr/bin/$terminal
+bindsym $mod+4 workspace $ws4; exec --no-startup-id [ $(ps h -C $files | wc -l) = 0 ] && /usr/bin/$files
 bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/joplin-desktop
 #bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/QOwnNotes
 #bindsym $mod+6 workspace $ws6; exec --no-startup-id [ $(ps h -C qutebrowser | wc -l) = 0 ] && /usr/bin/qutebrowser https://lxcloud.derchef.site/apps/dashboard
@@ -118,8 +121,8 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 
 # assign applications to workspaces
-#assign [class="kitty"] $ws3
-assign [class="Nautilus"] $ws4
+#assign [class="$terminal"] $ws3
+assign [class="$files"] $ws4
 assign [class="QOwnNotes"] $ws5
 assign [class="Joplin"] $ws5
 assign [class="Element"] $ws8
@@ -179,6 +182,7 @@ for_window [class="Xfburn"] floating enable
 for_window [class="UXTerm"] floating enable 
 for_window [class="XTerm"] floating enable 
 for_window [class="Tilix"] floating enable 
+for_window [title="Stacer"] floating enable 
 for_window [title="Taschenrechner"] floating enable
 for_window [class="kitty"] border none
 for_window [class="Tor Browser"] floating enable
