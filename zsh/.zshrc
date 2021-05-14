@@ -75,6 +75,7 @@ plugins=(
 	github
 	colored-man-pages
 	vagrant
+	colorize
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 	zsh-interactive-cd
@@ -111,7 +112,7 @@ alias i3config="nvim ~/.config/i3/config"
 alias polybarconfig="nvim ~/.config/polybar/config"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias lsblk="lsblk -f"
-alias ls="ls --hyperlink=always"
+alias ls="ls --hyperlink=always --color=auto"
 
 # Environment variables
 export pacpath=/var/cache/pacman/pkg

@@ -122,7 +122,7 @@ bindsym $mod+8 workspace $ws8
 
 # assign applications to workspaces
 #assign [class="$terminal"] $ws3
-assign [class="pcmanfm"] $ws4
+assign [class="$files"] $ws4
 assign [class="QOwnNotes"] $ws5
 assign [class="Joplin"] $ws5
 assign [class="Element"] $ws8
