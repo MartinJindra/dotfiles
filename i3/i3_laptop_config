@@ -2,9 +2,9 @@ set $mod Mod4
 set $terminal kitty
 set $files nautilus
 
-default_border pixel 1
-new_window 1pixel
-default_floating_border normal
+default_border normal
+new_window normal
+default_floating_border pixel 1
 
 hide_edge_borders none
 
@@ -47,7 +47,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # workspace back and forth (with/without active container)
-workspace_auto_back_and_forth yes
+#workspace_auto_back_and_forth yes
 bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
@@ -110,8 +110,8 @@ bindsym $mod+1 workspace $ws1
 #bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
 #bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/brave
 bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
-bindsym $mod+3 workspace $ws3; exec --no-startup-id /usr/bin/$terminal
-#bindsym $mod+3 workspace $ws3; exec --no-startup-id [ $(ps h -C $terminal | wc -l) = 0 ] && /usr/bin/$terminal
+#bindsym $mod+3 workspace $ws3; exec --no-startup-id /usr/bin/$terminal
+bindsym $mod+3 workspace $ws3; exec --no-startup-id [ $(ps h -C $terminal | wc -l) = 0 ] && /usr/bin/$terminal
 bindsym $mod+4 workspace $ws4; exec --no-startup-id [ $(ps h -C $files | wc -l) = 0 ] && /usr/bin/$files
 bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/joplin-desktop
 #bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/QOwnNotes
@@ -254,6 +254,8 @@ exec_always --no-startup-id element-desktop --hidden
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id $HOME/.config/polybar/i3wmthemer_bar_launch.sh
+
+exec_always --no-startup-id light -S 40
 
 # Theme colors
 client.focused: '#C5C8C6 #1D1F21 #C5C8C6 #81A2BE #81A2BE'
