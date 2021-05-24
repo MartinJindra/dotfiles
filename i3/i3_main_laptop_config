@@ -107,9 +107,9 @@ set $ws8 8: messages
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1 
-bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
+#bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
 #bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/brave
-#bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
+bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
 #bindsym $mod+3 workspace $ws3; exec --no-startup-id /usr/bin/$terminal
 bindsym $mod+3 workspace $ws3; exec --no-startup-id [ $(ps h -C $terminal | wc -l) = 0 ] && /usr/bin/$terminal
 bindsym $mod+4 workspace $ws4; exec --no-startup-id [ $(ps h -C $files | wc -l) = 0 ] && /usr/bin/$files
@@ -187,6 +187,7 @@ for_window [title="Taschenrechner"] floating enable
 for_window [class="kitty"] border none
 for_window [class="Tor Browser"] floating enable
 for_window [title="Picture-in-Picture"] sticky enable
+for_window [title="Bild-im-Bild"] sticky enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
