@@ -6,7 +6,7 @@ This repository stores all my configuration files for my custom i3wm-desktop.
 
 I personally did not write all these files by hand. I used some awesome projects to help create my personal desktop.
 
-## Used projects
+## Awesome projects that have been used
 
 1. [i3-gnome](https://github.com/i3-gnome/i3-gnome) by *i3-gnome* from Github to start an easy-to-use session.
 
