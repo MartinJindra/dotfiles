@@ -128,3 +128,7 @@ compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
+# starship
+eval "$(starship init zsh)"
+
+
