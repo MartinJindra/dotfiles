@@ -67,6 +67,7 @@ set noswapfile                  " No swap
 set t_Co=256                    " Set if term supports 256 colors.
 set number relativenumber       " Display line numbers
 set clipboard=unnamedplus       " Copy/paste between vim and other programs.
+set ignorecase                  " Disable case sensitv search
 syntax enable
 let g:rehash256 = 1
 
@@ -187,7 +188,7 @@ map <Leader>ms :InstantMarkdownStop<CR>      " Kills the preview
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Open terminal inside Vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <Leader>tt :vnew term://fish<CR>
+map <Leader>tt :vnew term://zsh<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mouse Scrolling
