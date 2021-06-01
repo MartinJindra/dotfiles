@@ -107,9 +107,9 @@ set $ws8 8: messages
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1 
-#bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
+bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
 #bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/brave
-bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
+#bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
 #bindsym $mod+3 workspace $ws3; exec --no-startup-id /usr/bin/$terminal
 bindsym $mod+3 workspace $ws3; exec --no-startup-id [ $(ps h -C $terminal | wc -l) = 0 ] && /usr/bin/$terminal
 bindsym $mod+4 workspace $ws4; exec --no-startup-id [ $(ps h -C $files | wc -l) = 0 ] && /usr/bin/$files
@@ -309,8 +309,8 @@ mode "$mode_gaps_outer" {
 }
 
 # set power-manager and volume control
-exec_always --no-startup-id mate-power-manager
-exec_always --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+#exec_always --no-startup-id mate-power-manager
+exec_always --no-startup-id /usr/lib/polkit-kde-authentication-agent-1 &
 
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 10
