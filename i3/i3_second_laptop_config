@@ -130,6 +130,7 @@ assign [class="Evolution"] $ws8
 assign [class="Teams"] $ws8
 assign [class="Signal"] $ws8
 assign [class="Telegram"] $ws8
+assign [title="Discord"] $ws8
 
 # Move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace $ws1
@@ -182,6 +183,7 @@ for_window [class="Xfburn"] floating enable
 for_window [class="UXTerm"] floating enable 
 for_window [class="XTerm"] floating enable 
 for_window [class="Tilix"] floating enable 
+for_window [class="st"] floating enable 
 for_window [title="Stacer"] floating enable 
 for_window [title="Taschenrechner"] floating enable
 for_window [class="kitty"] border none
@@ -243,17 +245,19 @@ mode "resize" {
 }
 
 # Autostart applications
-#exec_always --no-startup-id picom -b --experimental-backend
+exec_always --no-startup-id picom -b --experimental-backend
 exec_always --no-startup-id sleep 1; xrandr --output eDP1 --mode 1920x1080
 exec_always --no-startup-id sleep 1; nitrogen --set-scaled --random /usr/share/backgrounds; sleep 1; setxkbmap -layout de; xinput set-prop 15 326 1; xinput set-prop 15 324 1
 
 #exec_always --no-startup-id nm-applet
 exec_always --no-startup-id element-desktop --hidden
+#exec_always --no-startup-id telegram-desktop
+#exec_always --no-startup-id discord
 exec_always --no-startup-id joplin-desktop
 exec_always --no-startup-id nextcloud
 exec --no-startup-id connman-gtk
 
-exec_always --no-startup-id pamac-tray
+#exec_always --no-startup-id pamac-tray
 exec_always --no-startup-id killall clipit; clipit 
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
