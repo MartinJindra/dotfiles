@@ -44,29 +44,31 @@ Required packages:
 
 12. `light`
 
+13. starship
+
 **yay**
 
 ```bash
-yay -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light
+yay -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light starship 
 ```
 
 **paru**
 
 ```bash
-paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light
+paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light starship
 ```
 
 **pamac**
 
 ```bash
-pamac install --no-confirm i3-gaps i3blocks i3lock i3status rofi nitrogen playerctl pamixer pavucontrol light
+pamac install --no-confirm i3-gaps i3blocks i3lock i3status rofi nitrogen playerctl pamixer pavucontrol light eval starship 
 pamac build --no-confirm i3-gnome polybar clipit i3exit picom-jonaburg-git
 ```
 
 **trizen**
 
 ```bash
-trizen -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light
+trizen -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light starship
 ```
 
 ## Copy the configuration files
