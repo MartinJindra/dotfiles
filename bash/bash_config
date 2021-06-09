@@ -142,3 +142,6 @@ ex ()
 # added support for kitty terminal
 source <(kitty + complete setup bash)
 
+# starship
+eval "$(starship init bash)"
+
