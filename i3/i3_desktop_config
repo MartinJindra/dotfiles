@@ -130,6 +130,7 @@ assign [class="Evolution"] $ws8
 assign [class="Teams"] $ws8
 assign [class="Signal"] $ws8
 assign [class="Telegram"] $ws8
+assign [title="Discord"] $ws8
 
 # Move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace $ws1
@@ -182,10 +183,13 @@ for_window [class="Xfburn"] floating enable
 for_window [class="UXTerm"] floating enable 
 for_window [class="XTerm"] floating enable 
 for_window [class="Tilix"] floating enable 
+for_window [class="st"] floating enable 
 for_window [title="Stacer"] floating enable 
 for_window [title="Taschenrechner"] floating enable
 for_window [class="kitty"] border none
 for_window [class="Tor Browser"] floating enable
+for_window [title="Picture-in-Picture"] sticky enable
+for_window [title="Bild-im-Bild"] sticky enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
