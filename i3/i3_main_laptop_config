@@ -188,6 +188,7 @@ for_window [title="Stacer"] floating enable
 for_window [title="Taschenrechner"] floating enable
 for_window [class="kitty"] border none
 for_window [class="Tor Browser"] floating enable
+for_window [class="LibreWolf"] floating toggle resize set 512 576
 for_window [title="Picture-in-Picture"] sticky enable
 for_window [title="Bild-im-Bild"] sticky enable
 
