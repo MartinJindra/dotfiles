@@ -189,6 +189,7 @@ map <Leader>ms :InstantMarkdownStop<CR>      " Kills the preview
 " => Open terminal inside Vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <Leader>tt :vnew term://zsh<CR>
+map <Leader>t :split term://zsh<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mouse Scrolling
@@ -237,7 +238,7 @@ set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
-set guifont=SauceCodePro\ Nerd\ Font:h10
+set guifont=SauceCodePro\ Nerd\ Font:h12
 "set guifont=Mononoki\ Nerd\ Font:h15
 "set guifont=JetBrains\ Mono:h15
 
