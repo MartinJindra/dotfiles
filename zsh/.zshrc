@@ -113,6 +113,7 @@ alias polybarconfig="nvim ~/.config/polybar/config"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias lsblk="lsblk -f"
 alias ls="ls --hyperlink=always --color=auto"
+alias yeat="pacman -Rsn"
 
 # Environment variables
 export pacpath=/var/cache/pacman/pkg
@@ -125,6 +126,7 @@ export TERM=xterm-kitty
 # Kitty terminal configuration
 autoload -Uz compinit
 compinit
+
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
