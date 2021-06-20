@@ -1,6 +1,8 @@
 # Inserts a blank line between shell prompts
 add_newline = false
 
+command_timeout = 4000
+
 # Make prompt a single line instead of two lines
 [line_break]
 disabled = true
@@ -14,6 +16,7 @@ success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being
 disabled = false
 
 format = "$all"
+
 
 [username]
 style_user = "white bold"
