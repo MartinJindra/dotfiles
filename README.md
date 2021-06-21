@@ -6,7 +6,7 @@ This repository stores all my configuration files for my custom i3wm-desktop.
 
 I personally did not write all these files by hand. I used some awesome projects to help create my personal desktop.
 
-## Awesome projects that have been used
+## Awesome projects
 
 1. [i3-gnome](https://github.com/i3-gnome/i3-gnome) by *i3-gnome* from Github to start an easy-to-use session.
 
@@ -30,7 +30,7 @@ Required packages:
 
 5. `i3exit` (AUR)
 
-6. `picom-jonaburg-git` (AUR)
+6. `picom-jonaburg-git` (AUR) or `picom`
 
 7. `rofi`
 
@@ -45,6 +45,8 @@ Required packages:
 12. `light`
 
 13. `starship`
+
+## Installation of packages
 
 **yay**
 
@@ -70,4 +72,3 @@ pamac build --no-confirm i3-gnome polybar clipit i3exit picom-jonaburg-git
 ```bash
 trizen -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light starship
 ```
-
