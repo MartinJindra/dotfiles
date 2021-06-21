@@ -44,7 +44,7 @@ Required packages:
 
 12. `light`
 
-13. starship
+13. `starship`
 
 **yay**
 
@@ -71,42 +71,3 @@ pamac build --no-confirm i3-gnome polybar clipit i3exit picom-jonaburg-git
 trizen -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light starship
 ```
 
-## Copy the configuration files
-
-Copy the files to the specific locations
-
-1. **i3**
-
-```bash
-mkdir -p ~/.config/i3
-mv -v ~/.config/i3/config ~/.config/i3/config.bak
-cp -v $(pwd)/i3/i3_config ~/.config/i3/config
-```
-
-2. **Polybar (Laptop)**
-
-```bash
-mkdir -p ~/.config/polybar
-mv -v ~/.config/polybar/config ~/.config/polybar/config.bak
-cp -v $(pwd)/polybar/polybar_config ~/.config/polybar/config
-cp -v $(pwd)/polybar/temp_core ~/.config/polybar/
-cp -v $(pwd)/polybar/i3wmthemer_bar_launch.sh ~/.config/polybar
-```
-
-3. **Polybar (PC)**
-
-```bash
-mkdir -p ~/.config/polybar
-mv -v ~/.config/polybar/config ~/.config/polybar/config.bak
-cp -v $(pwd)/polybar/polybar_config ~/.config/polybar/config
-cp -v $(pwd)/polybar/temp_core ~/.config/polybar/
-cp -v $(pwd)/polybar/i3wmthemer_bar_launch.sh ~/.config/polybar
-```
-
-4. **Kitty Terminal**
-
-```bash
-mkdir -p ~/.config/kitty
-mv -v ~/.config/kitty.conf ~/.config/kitty/kitty.conf.bak
-cp -v $(pwd)/kitty/kitty_config ~/.config/kitty/kitty.conf
-```
