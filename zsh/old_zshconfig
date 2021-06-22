@@ -68,6 +68,10 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-r
 alias ll='ls -alF'
 alias ls="ls --hyperlink=always --color=auto"
+alias icat="kitty +kitten icat"
+alias kdiff="kitty +kitten diff"
+alias remote_file="kitty +kitten remote_file"
+alias hints="kitty +kitten hints"
 
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
