@@ -1,5 +1,7 @@
 # Dotfiles
 
+## Warning
+
 Please keep in mind that these files are <u>constantly changing</u> and the <u>experience may vary</u>. 
 
 This repository stores all my configuration files for my custom i3wm-desktop. 
