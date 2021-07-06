@@ -107,9 +107,9 @@ set $ws8 8: messages
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1 
-#bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
-#bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/brave
-bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
+#bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/vivaldi-stable
+#bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/brave
+bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && [ $(ps h -C brave | wc -l) = 0 ] && [ $(ps h -C vivaldi-bin | wc -l) = 0 ] && /usr/bin/firefox-developer-edition
 #bindsym $mod+3 workspace $ws3; exec --no-startup-id /usr/bin/$terminal
 bindsym $mod+3 workspace $ws3; exec --no-startup-id [ $(ps h -C $terminal | wc -l) = 0 ] && /usr/bin/$terminal
 bindsym $mod+4 workspace $ws4; exec --no-startup-id [ $(ps h -C $files | wc -l) = 0 ] && /usr/bin/$files
@@ -127,10 +127,12 @@ assign [class="QOwnNotes"] $ws5
 assign [class="Joplin"] $ws5
 assign [class="Element"] $ws8
 assign [class="Evolution"] $ws8
+assign [class="Thunderbird"] $ws8
 assign [class="Teams"] $ws8
 assign [class="Signal"] $ws8
 assign [class="Telegram"] $ws8
 assign [title="Discord"] $ws8
+assign [title="WhatsApp"] $ws8
 
 # Move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace $ws1
@@ -187,8 +189,9 @@ for_window [class="st"] floating enable
 for_window [title="Stacer"] floating enable 
 for_window [title="Taschenrechner"] floating enable
 for_window [class="kitty"] border none
+for_window [class="Vivaldi"] floating disable 
 for_window [class="Tor Browser"] floating enable
-for_window [class="LibreWolf"] floating toggle resize set 512 576
+#for_window [class="LibreWolf"] floating toggle resize set 512 576
 for_window [title="Picture-in-Picture"] sticky enable
 for_window [title="Bild-im-Bild"] sticky enable
 
@@ -257,7 +260,7 @@ exec_always --no-startup-id element-desktop --hidden
 exec_always --no-startup-id joplin-desktop
 exec_always --no-startup-id nextcloud
 
-#exec_always --no-startup-id pamac-tray
+exec_always --no-startup-id pamac-tray
 exec_always --no-startup-id killall clipit; clipit 
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
@@ -320,6 +323,7 @@ mode "$mode_gaps_outer" {
 # set power-manager and volume control
 #exec_always --no-startup-id mate-power-manager
 exec_always --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+#exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 10
