@@ -112,7 +112,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias i3config="nvim ~/.config/i3/config"
 alias polybarconfig="nvim ~/.config/polybar/config"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
-alias blk="lsblk -f | less"
+alias blk="lsblk -f | bat"
 alias ls="ls --hyperlink=always --color=auto"
 alias ll="exa -la"
 alias cat="bat"
@@ -126,7 +126,8 @@ export pacpath=/var/cache/pacman/pkg
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export TERM=xterm-kitty
-export VAGRANT_DEFAULT_PROVIDER=libvirt
+#export VAGRANT_DEFAULT_PROVIDER=libvirt
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
 
