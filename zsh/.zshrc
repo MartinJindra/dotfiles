@@ -115,7 +115,7 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias blk="lsblk -f | bat"
 alias ls="ls --hyperlink=always --color=auto"
 alias ll="exa -la"
-alias cat="bat"
+alias cat="bat -Pp"
 alias icat="kitty +kitten icat"
 alias kdiff="kitty +kitten diff"
 alias remote_file="kitty +kitten remote_file"
@@ -140,4 +140,4 @@ kitty + complete setup zsh | source /dev/stdin
 # starship
 #eval "$(starship init zsh)"
 
-
+PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 source /home/martin/.config/tea/autocomplete.zsh
