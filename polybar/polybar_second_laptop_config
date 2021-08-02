@@ -10,7 +10,7 @@ foreground = #C5C8C6
 line-size = 3
 line-color =
 
-border-size = 0
+border-size = 10 
 border-color =
 
 padding-left = 0
@@ -429,7 +429,7 @@ click-middle = pavucontrol
 
 [module/wlan]
 type = internal/network
-interface = wlo1
+interface = wlan0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -450,7 +450,7 @@ ramp-signal-4 = 
 
 [module/eth]
 type = internal/network
-interface = enp56s0u1u1u2
+interface = eth0
 interval = 3.0
 
 format-connected-padding = 2
