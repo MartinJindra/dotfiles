@@ -261,6 +261,8 @@ exec_always --no-startup-id joplin-desktop
 exec_always --no-startup-id nextcloud
 
 exec_always --no-startup-id pamac-tray
+exec_always --no-startup-id meteo 
+
 exec_always --no-startup-id killall clipit; clipit 
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor

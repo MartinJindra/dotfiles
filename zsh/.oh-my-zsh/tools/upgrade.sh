@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 if [ -z "$ZSH_VERSION" ]; then
-  exec zsh "$0"
+  exec zsh "$0" "$@"
 fi
 
 cd "$ZSH"
@@ -66,14 +66,13 @@ if git pull --rebase --stat origin master; then
   # Check if it was really updated or not
   if [[ "$(git rev-parse HEAD)" = "$last_commit" ]]; then
     message="Oh My Zsh is already at the latest version."
-    ret=80 # non-zero exit code to indicate no changes pulled
   else
     message="Hooray! Oh My Zsh has been updated!"
 
     # Save the commit prior to updating
     git config oh-my-zsh.lastVersion "$last_commit"
 
-    # Display changelog with less if available, otherwise just print it to the terminal
+    # Print changelog to the terminal
     if [[ "$1" = --interactive ]]; then
       "$ZSH/tools/changelog.sh" HEAD "$last_commit"
     fi

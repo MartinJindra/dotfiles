@@ -52,29 +52,31 @@ Required packages:
 
 15. `bat`
 
+16. `ttf-roboto-mono`
+
 ## Installation of packages
 
 **yay**
 
 ```bash
-yay -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light starship exa bat 
+yay -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light starship exa bat ttf-roboto-mono
 ```
 
 **paru**
 
 ```bash
-paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light starship exa bat
+paru -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light starship exa bat ttf-roboto-mono
 ```
 
 **pamac**
 
 ```bash
-pamac install --no-confirm i3-gaps i3blocks i3lock i3status rofi nitrogen playerctl pamixer pavucontrol light starship exa bat
+pamac install --no-confirm i3-gaps i3blocks i3lock i3status rofi nitrogen playerctl pamixer pavucontrol light starship exa bat ttf-roboto-mono
 pamac build --no-confirm i3-gnome polybar clipit i3exit picom-jonaburg-git
 ```
 
 **trizen**
 
 ```bash
-trizen -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light starship exa bat
+trizen -S --needed --noconfirm i3-gaps i3blocks i3lock i3status i3-gnome polybar clipit i3exit picom-jonaburg-git rofi nitrogen playerctl pamixer pavucontrol light starship exa bat ttf-roboto-mono
 ```

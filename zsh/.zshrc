@@ -10,6 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 #ZSH_THEME="awesomepanda"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -111,10 +112,11 @@ alias zshconfig="nvim ~/.zshrc"
 alias i3config="nvim ~/.config/i3/config"
 alias polybarconfig="nvim ~/.config/polybar/config"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
-alias blk="lsblk -f | less"
+alias blk="lsblk -f | bat"
 alias ls="ls --hyperlink=always --color=auto"
 alias ll="exa -la"
-alias cat="bat"
+alias cat="bat -Pp --color=always"
+alias less="bat --color=always --paging=always"
 alias icat="kitty +kitten icat"
 alias kdiff="kitty +kitten diff"
 alias remote_file="kitty +kitten remote_file"
@@ -125,7 +127,8 @@ export pacpath=/var/cache/pacman/pkg
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export TERM=xterm-kitty
-export VAGRANT_DEFAULT_PROVIDER=libvirt
+#export VAGRANT_DEFAULT_PROVIDER=libvirt
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
 
@@ -137,6 +140,6 @@ compinit
 kitty + complete setup zsh | source /dev/stdin
 
 # starship
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
-
+PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 source /home/martin/.config/tea/autocomplete.zsh
