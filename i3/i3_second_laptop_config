@@ -262,7 +262,8 @@ exec_always --no-startup-id sleep 1; nitrogen --set-scaled --random /usr/share/b
 exec_always --no-startup-id nextcloud
 exec --no-startup-id connman-gtk
 exec_always --no-startup-id kdeconnect-indicator
-#exec --no-startup-id birdtray 
+exec_always --no-startup-id meteo
+exec_always --no-startup-id birdtray
 
 #exec_always --no-startup-id pamac-tray
 exec_always --no-startup-id killall clipit; clipit 
