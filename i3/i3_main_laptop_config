@@ -113,16 +113,17 @@ bindsym $mod+2 workspace $ws2; exec --no-startup-id [ $(ps h -C firefox | wc -l)
 #bindsym $mod+3 workspace $ws3; exec --no-startup-id /usr/bin/$terminal
 bindsym $mod+3 workspace $ws3; exec --no-startup-id [ $(ps h -C $terminal | wc -l) = 0 ] && /usr/bin/$terminal
 bindsym $mod+4 workspace $ws4; exec --no-startup-id [ $(ps h -C $files | wc -l) = 0 ] && /usr/bin/$files
-bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/joplin-desktop
-#bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/QOwnNotes
+#bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/joplin-desktop
+bindsym $mod+5 workspace $ws5; exec --no-startup-id /usr/bin/QOwnNotes
 #bindsym $mod+6 workspace $ws6; exec --no-startup-id [ $(ps h -C qutebrowser | wc -l) = 0 ] && /usr/bin/qutebrowser https://lxcloud.derchef.site/apps/dashboard
-bindsym $mod+6 workspace $ws6; exec --no-startup-id /usr/lib/brave-bin/brave --new-window "https://lxcloud.derchef.site/apps/dashboard"
+bindsym $mod+6 workspace $ws6; exec --no-startup-id [ $(ps h -C brave | wc -l) = 0 ] && /usr/lib/brave/brave --new-window "https://lxcloud.derchef.site/apps/dashboard"
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 
 # assign applications to workspaces
 #assign [class="$terminal"] $ws3
 assign [class="$files"] $ws4
+assign [class="Nextcloud"] $ws4
 assign [class="QOwnNotes"] $ws5
 assign [class="Joplin"] $ws5
 assign [class="Element"] $ws8
