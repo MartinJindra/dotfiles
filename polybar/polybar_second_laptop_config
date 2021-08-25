@@ -10,7 +10,8 @@ foreground = #C5C8C6
 line-size = 3
 line-color =
 
-border-size = 10 
+;border-size = 10 
+border-size = 0 
 border-color =
 
 padding-left = 0
@@ -25,7 +26,7 @@ font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = i3 
 modules-center = date
-modules-right = backlight pulseaudio battery1 battery2 wlan eth powermenu
+modules-right = backlight pulseaudio wlan eth usbeth battery1 battery2 powermenu
 
 tray-position = right
 ;tray-padding =
@@ -450,7 +451,7 @@ ramp-signal-4 = 
 
 [module/eth]
 type = internal/network
-interface = eth0
+interface = enp0s31f6
 interval = 3.0
 
 format-connected-padding = 2
@@ -461,6 +462,21 @@ format-connected-prefix-foreground = #1E272B
 label-connected = %local_ip%
 
 format-disconnected =
+
+[module/usbeth]
+type = internal/network
+interface = enp0s20f0u1
+interval = 3.0
+
+format-connected-padding = 2
+format-connected-foreground = #1D1F21
+format-connected-background = #5F819D
+format-connected-prefix = " "
+format-connected-prefix-foreground = #1E272B
+label-connected = %local_ip%
+
+format-disconnected =
+
 
 
 [module/date]
