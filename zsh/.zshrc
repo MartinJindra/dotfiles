@@ -75,15 +75,18 @@ plugins=(
 	git-extras
 	github
 	colored-man-pages
-	vagrant
 	colorize
-	zsh-syntax-highlighting
-	zsh-autosuggestions
 	zsh-interactive-cd
 	alias-finder
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
