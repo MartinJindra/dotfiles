@@ -22,7 +22,9 @@ bindsym $mod+Return exec --no-startup-id $terminal
 bindsym $mod+x kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id rofi -show drun window -kb-row-tab "" -kb-mode-next "Tab"
+bindsym $mod+d exec rofi -modi drun -show drun -display-drun "Apps : " -line-padding 4 \
+                -columns 2 -padding 50 -hide-scrollbar \
+                -show-icons -drun-icon-theme "Arc-X-D" -font "Noto Sans Regular 11"
 
 # change focus
 #bindsym $mod+j focus left

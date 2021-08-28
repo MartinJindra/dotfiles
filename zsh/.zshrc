@@ -78,6 +78,7 @@ plugins=(
 	colorize
 	zsh-interactive-cd
 	alias-finder
+    command-not-found
 )
 
 source $ZSH/oh-my-zsh.sh
