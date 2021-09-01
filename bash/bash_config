@@ -75,7 +75,8 @@ if ${use_color} ; then
 		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
 	fi
 
-	alias ls='ls --color=auto --hyperlink=always'
+	alias ls="exa -s filename"
+	alias ll="exa -l --git -s filename"
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
@@ -90,12 +91,18 @@ fi
 
 unset use_color safe_term match_lhs sh
 
-alias ll="ls -lhd"
-alias cp="cp -i"                          # confirm before overwriting something
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
-alias more=less
+alias zshconfig="nvim ~/.zshrc"
+alias i3config="nvim ~/.config/i3/config"
+alias polybarconfig="nvim ~/.config/polybar/config"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias blk="lsblk -f | bat"
+alias cat="bat -Pp --color=always"
+alias less="bat --color=always --paging=always"
+alias icat="kitty +kitten icat"
+alias kdiff="kitty +kitten diff"
+alias remote_file="kitty +kitten remote_file"
+alias hints="kitty +kitten hints"
+alias ssh="kitty +kitten ssh"
 
 xhost +local:root > /dev/null 2>&1
 
