@@ -117,8 +117,10 @@ alias i3config="nvim ~/.config/i3/config"
 alias polybarconfig="nvim ~/.config/polybar/config"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias blk="lsblk -f | bat"
-alias ls="exa -s filename"
-alias ll="exa -l --git -s filename"
+alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first'  # long format
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias cat="bat -Pp --color=always"
 alias less="bat --color=always --paging=always"
 alias cls="clear"
