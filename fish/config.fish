@@ -12,3 +12,6 @@ alias ga="git add"
 alias gc="git commit"
 alias gl="git pull"
 alias gp="git push"
+
+starship init fish | source
+
