@@ -74,9 +74,10 @@ if ${use_color} ; then
 	else
 		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
 	fi
-
-	alias ls="exa -s filename"
-	alias ll="exa -l --git -s filename"
+    alias ls='exa -al --color=always --group-directories-first'
+    alias la='exa -a --color=always --group-directories-first'
+    alias ll='exa -l --color=always --group-directories-first'
+    alias lt='exa -aT --color=always --group-directories-first'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
@@ -92,12 +93,18 @@ fi
 unset use_color safe_term match_lhs sh
 
 alias zshconfig="nvim ~/.zshrc"
+alias bashconfig="nvim ~/.bashrc"
 alias i3config="nvim ~/.config/i3/config"
 alias polybarconfig="nvim ~/.config/polybar/config"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias blk="lsblk -f | bat"
+alias tree="broot -s"
 alias cat="bat -Pp --color=always"
 alias less="bat --color=always --paging=always"
+alias cls="clear"
+alias cp="cp -v"
+alias rm="rm -v"
+alias mv="mv -v"
 alias icat="kitty +kitten icat"
 alias kdiff="kitty +kitten diff"
 alias remote_file="kitty +kitten remote_file"
