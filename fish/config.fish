@@ -14,6 +14,7 @@ alias gd="git diff"
 alias gc="git commit"
 alias gl="git pull"
 alias gp="git push"
+alias gst="git status"
 
 starship init fish | source
 
