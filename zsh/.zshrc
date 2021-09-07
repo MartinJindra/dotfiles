@@ -119,9 +119,8 @@ alias polybarconfig="nvim ~/.config/polybar/config"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias blk="lsblk -f | bat"
 alias tree="broot -s"
-alias ls='exa -al --color=always --group-directories-first'
-alias la='exa -a --color=always --group-directories-first'
-alias ll='exa -l --color=always --group-directories-first'
+alias ls='exa -a --color=always --group-directories-first'
+alias ll='exa -al --color=always --group-directories-first'
 alias lt='exa -aT --color=always --group-directories-first'
 alias cat="bat -Pp --color=always"
 alias less="bat --color=always --paging=always"

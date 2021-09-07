@@ -10,6 +10,7 @@ alias lt='exa -aT --color=always --group-directories-first'
 alias cat="bat -Pp --color=always"
 alias less="bat --color=always --paging=always"
 alias ga="git add"
+alias gd="git diff"
 alias gc="git commit"
 alias gl="git pull"
 alias gp="git push"
