@@ -3,9 +3,8 @@ if status is-interactive
 end
 
 alias tree="broot -s"
-alias ls='exa -a --color=always --group-directories-first'
+alias ls='exa --color=always --group-directories-first'
 alias ll='exa -al --color=always --group-directories-first'
-alias lt='exa -aT --color=always --group-directories-first'
 alias cat="bat -Pp --color=always"
 alias less="bat --color=always --paging=always"
 alias ga="git add"
