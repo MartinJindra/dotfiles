@@ -21,7 +21,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'suan/vim-instant-markdown', {'rtp': 'after'} " Markdown Preview
     Plug 'frazrepo/vim-rainbow'
 "{{ File management }}
-    Plug 'vifm/vifm.vim'                               " Vifm
+    Plug 'Mizuchi/vim-ranger'                          " Ranger 
+    "Plug 'vifm/vifm.vim'                              " Vifm
     Plug 'scrooloose/nerdtree'                         " Nerdtree
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'     " Highlighting Nerdtree
     Plug 'ryanoasis/vim-devicons'                      " Icons for Nerdtree
