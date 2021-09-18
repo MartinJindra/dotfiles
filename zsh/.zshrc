@@ -137,8 +137,8 @@ export pacpath=/var/cache/pacman/pkg
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export TERM=xterm-kitty
-#export VAGRANT_DEFAULT_PROVIDER=libvirt
-export VAGRANT_DEFAULT_PROVIDER=virtualbox
+export VAGRANT_DEFAULT_PROVIDER=libvirt
+#export VAGRANT_DEFAULT_PROVIDER=virtualbox
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
 
