@@ -118,6 +118,7 @@ alias i3config="nvim ~/.config/i3/config"
 alias polybarconfig="nvim ~/.config/polybar/config"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias tree="broot -s"
+alias vim="nvim"
 alias ls='exa --color=always --group-directories-first --icons'
 alias ll='exa -al --color=always --group-directories-first --icons'
 alias cat="bat -Pp --color=always"
