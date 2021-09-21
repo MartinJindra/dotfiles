@@ -90,13 +90,13 @@ fi
 
 unset use_color safe_term match_lhs sh
 
-alias zshconfig="nvim ~/.zshrc"
-alias bashconfig="nvim ~/.bashrc"
-alias i3config="nvim ~/.config/i3/config"
-alias polybarconfig="nvim ~/.config/polybar/config"
-alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias zshconfig="$EDITOR ~/.zshrc"
+alias bashconfig="$EDITOR ~/.bashrc"
+alias i3config="$EDITOR ~/.config/i3/config"
+alias polybarconfig="$EDITOR ~/.config/polybar/config"
+alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias tree="broot -s"
-alias vim="nvim"
+alias vim="$EDITOR"
 alias cat="bat -Pp --color=always"
 alias less="bat --color=always --paging=always"
 alias cp="cp -v"

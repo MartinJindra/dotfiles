@@ -159,7 +159,7 @@ c.url.searchengines = {'DEFAULT': 'https://search.brave.com/search?q={}&source=w
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = 'https://search.brave.com/'
+c.url.start_pages = 'search.brave.com'
 
 # Render all web contents using a dark theme. Example configurations
 # from Chromium's `chrome://flags`:  - "With simple HSL/CIELAB/RGB-based
