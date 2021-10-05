@@ -107,6 +107,14 @@ alias kdiff="kitty +kitten diff"
 alias remote_file="kitty +kitten remote_file"
 alias hints="kitty +kitten hints"
 alias ssh="kitty +kitten ssh"
+alias gitu='git add . && git commit && git push'
+alias gadd="git add"
+alias gc="git commit"
+alias gull="git pull"
+alias gush="git push"
+alias gst="git status"
+alias giff="git diff"
+alias gl="git log --show-signature --stat --graph"
 
 xhost +local:root > /dev/null 2>&1
 
