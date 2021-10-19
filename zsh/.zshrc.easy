@@ -73,8 +73,6 @@ alias i3config="$EDITOR ~/.config/i3/config"
 alias polybarconfig="$EDITOR ~/.config/polybar/config"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias vim="$EDITOR"
-alias cat="bat -Pp --color=always"
-alias less="bat --color=always --paging=always"
 alias cp="cp -v"
 alias rm="rm -v"
 alias mv="mv -v"
@@ -84,23 +82,10 @@ alias remote_file="kitty +kitten remote_file"
 alias hints="kitty +kitten hints"
 alias ssh="kitty +kitten ssh"
 
-alias gitu='git add . && git commit && git push'
-alias gadd="git add"
-alias gc="git commit"
-alias gull="git pull"
-alias gush="git push"
-alias gst="git status"
-alias giff="git diff"
-alias gl="git log --show-signature --stat --graph"
-
-
 # Environment variables
-export pacpath=/var/cache/pacman/pkg
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export TERM=xterm-kitty
-export VAGRANT_DEFAULT_PROVIDER=libvirt
-#export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
 # Kitty terminal configuration
 autoload -Uz compinit
