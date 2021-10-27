@@ -78,7 +78,7 @@ plugins=(
 	colorize
 	zsh-interactive-cd
 	alias-finder
-    command-not-found
+    	command-not-found
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -153,3 +153,5 @@ kitty + complete setup zsh | source /dev/stdin
 eval "$(starship init zsh)"
 
 PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 source /home/martin/.config/tea/autocomplete.zsh
+
+source /home/martin/.config/broot/launcher/bash/br
