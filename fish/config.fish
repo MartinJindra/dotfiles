@@ -2,6 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+set EDITOR "/usr/bin/nvim"
+
 alias zshconfig="$EDITOR ~/.zshrc"
 alias bashconfig="$EDITOR ~/.bashrc"
 alias i3config="$EDITOR ~/.config/i3/config"
