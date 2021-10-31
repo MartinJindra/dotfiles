@@ -67,8 +67,17 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-r
 
+# Environment variables
+export pacpath=/var/cache/pacman/pkg
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
+export TERM=xterm-kitty
+export VAGRANT_DEFAULT_PROVIDER=libvirt
+#export VAGRANT_DEFAULT_PROVIDER=virtualbox
+
 alias zshconfig="$EDITOR ~/.zshrc"
 alias bashconfig="$EDITOR ~/.bashrc"
+alias fishconfig="$EDITOR ~/.config/fish/config.fish"
 alias i3config="$EDITOR ~/.config/i3/config"
 alias polybarconfig="$EDITOR ~/.config/polybar/config"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
@@ -82,10 +91,21 @@ alias remote_file="kitty +kitten remote_file"
 alias hints="kitty +kitten hints"
 alias ssh="kitty +kitten ssh"
 
+<<<<<<< Updated upstream:zsh/.zshrc.easy
 # Environment variables
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export TERM=xterm-kitty
+=======
+alias gitu='git add . && git commit && git push'
+alias gadd="git add"
+alias gc="git commit"
+alias gull="git pull"
+alias gush="git push"
+alias gst="git status"
+alias giff="git diff"
+alias gl="git log --show-signature --stat --graph"
+>>>>>>> Stashed changes:zsh/old_zshconfig
 
 # Kitty terminal configuration
 autoload -Uz compinit

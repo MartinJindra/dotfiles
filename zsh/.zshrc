@@ -93,6 +93,16 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Environment variables
+export pacpath=/var/cache/pacman/pkg
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
+export TERM=xterm-kitty
+export VAGRANT_DEFAULT_PROVIDER=libvirt
+#export VAGRANT_DEFAULT_PROVIDER=virtualbox
+#export QT_STYLE_OVERRIDE=adwaita-dark
+#export QT_STYLE_OVERRIDE=kvantum
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -114,14 +124,15 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Example aliases
 alias zshconfig="$EDITOR ~/.zshrc"
 alias bashconfig="$EDITOR ~/.bashrc"
+alias fishconfig="$EDITOR ~/.config/fish/config.fish"
 alias i3config="$EDITOR ~/.config/i3/config"
 alias polybarconfig="$EDITOR ~/.config/polybar/config"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias tree="broot -s"
 alias vim="$EDITOR"
-alias ls='exa --color=always --group-directories-first --icons --group'
+alias ls='exa --color=always --group-directories-first'
 alias ll='exa -al --color=always --group-directories-first --icons --group'
-alias cat="bat -Pp --color=always"
+alias cat="bat -P --color=always"
 alias less="bat --color=always --paging=always"
 alias cp="cp -v"
 alias rm="rm -v"
@@ -131,16 +142,6 @@ alias kdiff="kitty +kitten diff"
 alias remote_file="kitty +kitten remote_file"
 alias hints="kitty +kitten hints"
 alias ssh="kitty +kitten ssh"
-
-# Environment variables
-export pacpath=/var/cache/pacman/pkg
-export EDITOR=/usr/bin/nvim
-export VISUAL=/usr/bin/nvim
-export TERM=xterm-kitty
-#export VAGRANT_DEFAULT_PROVIDER=libvirt
-export VAGRANT_DEFAULT_PROVIDER=virtualbox
-#export QT_STYLE_OVERRIDE=adwaita-dark
-#export QT_STYLE_OVERRIDE=kvantum
 
 # Kitty terminal configuration
 autoload -Uz compinit
@@ -152,6 +153,10 @@ kitty + complete setup zsh | source /dev/stdin
 # starship
 eval "$(starship init zsh)"
 
+# import tea autocompletion
 PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 source /home/martin/.config/tea/autocomplete.zsh
 
+<<<<<<< Updated upstream
 source /home/martin/.config/broot/launcher/bash/br
+=======
+>>>>>>> Stashed changes

@@ -90,14 +90,27 @@ fi
 
 unset use_color safe_term match_lhs sh
 
+# Environment variables
+export pacpath=/var/cache/pacman/pkg
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
+export TERM=xterm-kitty
+export VAGRANT_DEFAULT_PROVIDER=libvirt
+#export VAGRANT_DEFAULT_PROVIDER=virtualbox
+#export QT_STYLE_OVERRIDE=adwaita-dark
+#export QT_STYLE_OVERRIDE=kvantum
+
 alias zshconfig="$EDITOR ~/.zshrc"
 alias bashconfig="$EDITOR ~/.bashrc"
+alias fishconfig="$EDITOR ~/.config/fish/config.fish"
 alias i3config="$EDITOR ~/.config/i3/config"
 alias polybarconfig="$EDITOR ~/.config/polybar/config"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias tree="broot -s"
 alias vim="$EDITOR"
-alias cat="bat -Pp --color=always"
+alias ls='exa --color=always --group-directories-first'
+alias ll='exa -al --color=always --group-directories-first --icons --group'
+alias cat="bat -P --color=always"
 alias less="bat --color=always --paging=always"
 alias cp="cp -v"
 alias rm="rm -v"
@@ -163,4 +176,8 @@ source <(kitty + complete setup bash)
 
 # starship
 eval "$(starship init bash)"
+
+# import tea autocompletion
+PROG=tea source "/home/martin/.config/tea/autocomplete.sh
+
 
