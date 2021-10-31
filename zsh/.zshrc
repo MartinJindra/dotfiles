@@ -156,7 +156,4 @@ eval "$(starship init zsh)"
 # import tea autocompletion
 PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 source /home/martin/.config/tea/autocomplete.zsh
 
-<<<<<<< Updated upstream
 source /home/martin/.config/broot/launcher/bash/br
-=======
->>>>>>> Stashed changes
