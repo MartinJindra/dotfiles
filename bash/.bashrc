@@ -74,8 +74,6 @@ if ${use_color} ; then
     else
         PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
     fi
-    alias ls='exa --color=always --group-directories-first --icons'
-    alias ll='exa -al --color=always --group-directories-first --icons'
     alias grep='grep --colour=auto'
     alias egrep='egrep --colour=auto'
     alias fgrep='fgrep --colour=auto'
@@ -109,7 +107,7 @@ alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias tree="broot -s"
 alias vim="$EDITOR"
 alias ls='exa --color=always --group-directories-first'
-alias ll='exa -al --color=always --group-directories-first --icons --group'
+alias ll='exa -al --color=always --group-directories-first --icons --group --git'
 alias cat="bat -P --color=always"
 alias less="bat --color=always --paging=always"
 alias cp="cp -v"
