@@ -176,6 +176,6 @@ source <(kitty + complete setup bash)
 eval "$(starship init bash)"
 
 # import tea autocompletion
-PROG=tea source "/home/martin/.config/tea/autocomplete.sh
+PROG=tea source "/home/martin/.config/tea/autocomplete.sh"
 
 
