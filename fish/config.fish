@@ -20,11 +20,8 @@ alias polybarconfig="$EDITOR ~/.config/polybar/config"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias tree="broot -s"
 alias vim="$EDITOR"
-alias ls='exa --color=always --group-directories-first --icons --group --git'
-alias ll='exa -al --color=always --group-directories-first --icons --group --git'
-alias cat="bat -Pp --color=always"
 alias ls='exa --color=always --group-directories-first'
-alias ll='exa -al --color=always --group-directories-first --icons --group'
+alias ll='exa -al --color=always --group-directories-first --icons --group --git'
 alias cat="bat -P --color=always"
 alias less="bat --color=always --paging=always"
 alias cp="cp -v"
@@ -46,3 +43,4 @@ alias giff="git diff"
 alias gl="git log --show-signature --stat --graph"
 
 starship init fish | source
+
