@@ -26,7 +26,7 @@ export ZSH=$HOME/.oh-my-zsh
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"
@@ -71,14 +71,14 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
-	git-extras
-	github
-	colored-man-pages
-	colorize
-	zsh-interactive-cd
-	alias-finder
-    	command-not-found
+    git
+    git-extras
+    github
+    colored-man-pages
+    colorize
+    zsh-interactive-cd
+    alias-finder
+    command-not-found
 )
 
 source $ZSH/oh-my-zsh.sh
