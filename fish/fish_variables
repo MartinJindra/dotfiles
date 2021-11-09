@@ -1,5 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export ANDROID_SDK_ROOT:/opt/android\x2dsdk
+SETUVAR --export JAVA_HOME:/usr/lib/jvm/java\x2d8\x2dopenjdk
+SETUVAR --export JAVA_OPTS:\x2dXX\x3a\x2bIgnoreUnrecognizedVMOptions\x20\x2d\x2dadd\x2dmodules\x20java\x2ese\x2eee
 SETUVAR __fish_initialized:3100
 SETUVAR _fisher_plugins:barnybug/docker\x2dfish\x2dcompletion
 SETUVAR fish_color_autosuggestion:3BA3D0
@@ -30,3 +33,4 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_user_paths:/opt/android\x2dsdk/tools/bin/\x1e/opt/android\x2dsdk/tools\x1e/opt/android\x2dsdk/platform\x2dtools\x1e/opt/android\x2dsdk/emulator\x1e/opt/android\x2dsdk/platform\x2dtools\x1e/opt/android\x2dsdk/emulator
