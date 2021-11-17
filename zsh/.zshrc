@@ -9,8 +9,8 @@ export ZSH=$HOME/.oh-my-zsh
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-#ZSH_THEME="awesomepanda"
-#ZSH_THEME="agnoster"
+# ZSH_THEME="awesomepanda"
+# ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -160,4 +160,6 @@ eval "$(starship init zsh)"
 # import tea autocompletion
 PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 source /home/martin/.config/tea/autocomplete.zsh
 
+# broot
 source /home/martin/.config/broot/launcher/bash/br
+
