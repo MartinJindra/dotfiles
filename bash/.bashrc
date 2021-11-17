@@ -98,25 +98,9 @@ export VAGRANT_DEFAULT_PROVIDER=libvirt
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
 
-alias zshconfig="$EDITOR ~/.zshrc"
-alias bashconfig="$EDITOR ~/.bashrc"
-alias fishconfig="$EDITOR ~/.config/fish/config.fish"
-alias i3config="$EDITOR ~/.config/i3/config"
-alias polybarconfig="$EDITOR ~/.config/polybar/config"
-alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
-alias tree="broot -s"
-alias vim="$EDITOR"
-alias ls='exa --color=always --group-directories-first'
-alias ll='exa -al --color=always --group-directories-first --icons --group --git'
-alias cat="bat -P --color=always"
-alias less="bat --color=always --paging=always"
-alias cp="cp -v"
-alias rm="rm -v"
-alias mv="mv -v"
-alias icat="kitty +kitten icat"
-alias kdiff="kitty +kitten diff"
-alias remote_file="kitty +kitten remote_file"
-alias hints="kitty +kitten hints"
+alias cp="cp -vi"
+alias rm="rm -vi"
+alias mv="mv -vi"
 alias ssh="kitty +kitten ssh"
 alias gitu='git add . && git commit && git push'
 alias gadd="git add"
