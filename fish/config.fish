@@ -11,6 +11,7 @@ set VAGRANT_DEFAULT_PROVIDER libvirt
 #set VAGRANT_DEFAULT_PROVIDER virtualbox
 #set QT_STYLE_OVERRIDE adwaita-dark
 #set QT_STYLE_OVERRIDE kvantum
+set PICO_SDK_PATH /opt/pico-sdk
 
 alias zshconfig="$EDITOR ~/.zshrc"
 alias bashconfig="$EDITOR ~/.bashrc"

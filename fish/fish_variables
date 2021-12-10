@@ -3,6 +3,7 @@
 SETUVAR --export ANDROID_SDK_ROOT:/opt/android\x2dsdk
 SETUVAR --export JAVA_HOME:/usr/lib/jvm/java\x2d8\x2dopenjdk
 SETUVAR --export JAVA_OPTS:\x2dXX\x3a\x2bIgnoreUnrecognizedVMOptions\x20\x2d\x2dadd\x2dmodules\x20java\x2ese\x2eee
+SETUVAR --path PICO_SDK_PATH:/opt/pico\x2dsdk
 SETUVAR __fish_initialized:3100
 SETUVAR _fisher_plugins:barnybug/docker\x2dfish\x2dcompletion
 SETUVAR fish_color_autosuggestion:3BA3D0

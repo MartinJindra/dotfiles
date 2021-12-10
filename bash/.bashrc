@@ -94,6 +94,7 @@ export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export TERM=xterm-kitty
 export VAGRANT_DEFAULT_PROVIDER=libvirt
+export PICO_SDK_PATH=/opt/pico-sdk
 #export VAGRANT_DEFAULT_PROVIDER=virtualbox
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
