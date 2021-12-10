@@ -134,10 +134,10 @@ alias polybarconfig="$EDITOR ~/.config/polybar/config"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias tree="broot -s"
 alias vim="$EDITOR"
-alias ls='exa --color=always --group-directories-first'
-alias ll='exa -al --color=always --group-directories-first --icons --group --git'
-alias cat="bat -P --color=always"
-alias less="bat --color=always --paging=always"
+alias ls='exa --color=auto --group-directories-first'
+alias ll='exa -al --color=auto --group-directories-first --icons --group --git'
+alias cat="bat -P --color=auto"
+alias less="bat --color=auto --paging=always"
 alias cp="cp -v"
 alias rm="rm -v"
 alias mv="mv -v"
