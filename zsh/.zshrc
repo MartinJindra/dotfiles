@@ -137,7 +137,7 @@ alias tree="broot -s"
 alias vim="$EDITOR"
 alias ls='exa --color=auto --group-directories-first'
 alias ll='exa -al --color=auto --group-directories-first --icons --group --git'
-alias cat="bat -P --color=auto"
+alias bat="bat -P --color=auto"
 alias less="bat --color=auto --paging=always"
 alias cp="cp -v"
 alias rm="rm -v"
