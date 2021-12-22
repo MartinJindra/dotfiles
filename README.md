@@ -18,13 +18,15 @@ Clone with [yadm](https://archlinux.org/packages/community/any/yadm/).
 yadm clone https://git.derchef.site/derchef/dotfiles
 ```
 
-## Awesome projects
+## Setting up an i3 desktop
+
+### Awesome projects
 
 1. [i3-gnome](https://github.com/i3-gnome/i3-gnome) by *i3-gnome* from Github to start an easy-to-use session.
 
 2. [i3wm-themer](https://github.com/unix121/i3wm-themer) by *unix121* from Github to create my desktop. 
 
-## Requirements
+### Requirements
 
 This project is primarily for Arch Linux. So some of these requirements need different and/or more steps on other Linux distributions.
 
