@@ -8,6 +8,16 @@ This repository stores all my configuration files for my custom i3wm-desktop.
 
 I personally did not write all these files by hand. I used some awesome projects to help create my personal desktop.
 
+## Cloning the repository
+
+For a quick installation of the config files.
+
+Clone with [yadm](https://archlinux.org/packages/community/any/yadm/).
+
+```
+yadm clone https://git.derchef.site/derchef/dotfiles
+```
+
 ## Awesome projects
 
 1. [i3-gnome](https://github.com/i3-gnome/i3-gnome) by *i3-gnome* from Github to start an easy-to-use session.
