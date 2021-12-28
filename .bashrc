@@ -99,6 +99,10 @@ export PICO_SDK_PATH=/opt/pico-sdk
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
 
+alias ls="ls --color=auto"
+alias ll="ls -alF"
+alias la='ls -A'
+alias l='ls -CF'
 alias cp="cp -vi"
 alias rm="rm -vi"
 alias mv="mv -vi"
