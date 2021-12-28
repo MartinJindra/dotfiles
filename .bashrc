@@ -154,9 +154,14 @@ ex ()
   fi
 }
 
-# added support for kitty terminal
-source <(kitty + complete setup bash)
+if [ -x kitty ];
+then
+    # added support for kitty terminal
+    source <(kitty + complete setup bash)
+fi
 
-# starship
-eval "$(starship init bash)"
-
+if [ -x starship ];
+then
+    # starship
+    eval "$(starship init bash)"
+fi
