@@ -134,7 +134,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 # Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 # for a blank page.
 # Type: FuzzyUrl
-c.url.default_page = 'https://www.search.brave.com/'
+c.url.default_page = 'search.brave.com/'
 
 # Search engines which can be used via the address bar.  Maps a search
 # engine name (such as `DEFAULT`, or `ddg`) to a URL with a `{}`
@@ -155,7 +155,7 @@ c.url.default_page = 'https://www.search.brave.com/'
 # the search engine name to the search term, e.g. `:open google
 # qutebrowser`.
 # Type: Dict
-c.url.searchengines = {'DEFAULT': 'https://search.brave.com/search?q={}&source=web'}
+c.url.searchengines = {'DEFAULT': 'search.brave.com/search?q={}&source=web'}
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
