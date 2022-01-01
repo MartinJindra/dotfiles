@@ -31,7 +31,7 @@ colors() {
     done
 }
 
-[ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+[ -f /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
 # Change the window title of X terminals
 case ${TERM} in
@@ -158,14 +158,5 @@ ex ()
   fi
 }
 
-if [ -x kitty ];
-then
-    # added support for kitty terminal
-    source <(kitty + complete setup bash)
-fi
+source ~/.bash_profile
 
-if [ -x starship ];
-then
-    # starship
-    eval "$(starship init bash)"
-fi
