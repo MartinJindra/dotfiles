@@ -10,9 +10,9 @@ I personally did not write all these files by hand. I used some awesome projects
 
 ## Cloning the repository
 
-For a quick installation of the config files.
+For a quick installation of the config files you can clone this repo with `git`.
 
-Clone with [yadm](https://archlinux.org/packages/community/any/yadm/).
+For ease of use use [yadm](https://archlinux.org/packages/community/any/yadm/).
 
 ```
 yadm clone https://git.derchef.site/derchef/dotfiles
