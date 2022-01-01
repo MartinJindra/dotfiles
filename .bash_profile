@@ -11,3 +11,6 @@
 
 [[ -x "$(which rustup)" ]] && eval "$(rustup completions bash)"
 
+[[ -x "$(which broot)" ]] && source $HOME/.config/broot/launcher/bash/br
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
