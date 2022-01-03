@@ -1,16 +1,16 @@
 # github-cli
-[[ -x "$(which gh)" ]] && eval "$(gh completion -s bash)"
+[[ -x "$(command -v gh)" ]] && eval "$(gh completion -s bash)"
 
 # starship
-[[ -x "$(which starship)" ]] && eval "$(starship init bash)"
+[[ -x "$(command -v starship)" ]] && eval "$(starship init bash)"
 
 # kitty terminal
-[[ -x "$(which kitty)" ]] && source <(kitty + complete setup bash)
+[[ -x "$(command -v kitty)" ]] && source <(kitty + complete setup bash)
 
 # rustup
 
-[[ -x "$(which rustup)" ]] && eval "$(rustup completions bash)"
+[[ -x "$(command -v rustup)" ]] && eval "$(rustup completions bash)"
 
-[[ -x "$(which broot)" ]] && source $HOME/.config/broot/launcher/bash/br
+[[ -x "$(command -v broot)" ]] && source $HOME/.config/broot/launcher/bash/br
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
