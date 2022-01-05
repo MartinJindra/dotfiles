@@ -157,3 +157,6 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+# starship
+[[ -x "$(command -v starship)" ]] && eval "$(starship init bash)"
