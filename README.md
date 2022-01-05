@@ -16,6 +16,7 @@ For ease of use use [yadm](https://archlinux.org/packages/community/any/yadm/).
 
 ```
 yadm clone https://git.derchef.site/derchef/dotfiles
+yadm submodule update --init
 ```
 
 ## Setting up an i3 desktop
