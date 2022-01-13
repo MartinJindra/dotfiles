@@ -84,10 +84,21 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # syntax highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+if [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ];
+then
+    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+elif [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ];
+then
+    source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 # autosuggestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ];
+then
+    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+elif [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ];
+then
+    source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
 # User configuration
 
@@ -153,14 +164,15 @@ autoload -Uz compinit
 compinit
 
 # Completion for kitty
-kitty + complete setup zsh | source /dev/stdin
+[[ -x "$(command -v kitty)" ]] && kitty + complete setup zsh | source /dev/stdin
 
 # starship
-eval "$(starship init zsh)"
+[[ -x "$(command -v starship)" ]] && eval "$(starship init zsh)"
 
 # import tea autocompletion
-PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 source /home/martin/.config/tea/autocomplete.zsh
+tea_zsh="$USER/.config/tea/autocomplete.zsh"
+[ -f "$tea_zsh" ] && PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 source "$tea_zsh"
 
 # broot
-source /home/martin/.config/broot/launcher/bash/br
-
+broot_zsh="$USER/.config/broot/launcher/bash/br"
+[ -f "$tea_zsh" ] && source "$broot_zsh"
