@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="awesomepanda"
-# ZSH_THEME="agnoster"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -74,6 +74,8 @@ plugins=(
     git
     git-extras
     github
+    docker
+    docker-compose
     colored-man-pages
     colorize
     zsh-interactive-cd
@@ -159,7 +161,7 @@ compinit
 [[ -x "$(command -v kitty)" ]] && kitty + complete setup zsh | source /dev/stdin
 
 # starship
-[[ -x "$(command -v starship)" ]] && eval "$(starship init zsh)"
+#[[ -x "$(command -v starship)" ]] && eval "$(starship init zsh)"
 
 # import tea autocompletion
 tea_zsh="$USER/.config/tea/autocomplete.zsh"
