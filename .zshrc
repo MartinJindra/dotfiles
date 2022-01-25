@@ -138,14 +138,6 @@ export PICO_SDK_PATH=/opt/pico-sdk
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="$EDITOR ~/.zshrc"
-alias bashconfig="$EDITOR ~/.bashrc"
-alias fishconfig="$EDITOR ~/.config/fish/config.fish"
-alias i3config="$EDITOR ~/.config/i3/config"
-alias polybarconfig="$EDITOR ~/.config/polybar/config"
-alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
-alias tree="broot -s"
-alias vim="$EDITOR"
 alias ls='exa --color=auto --group-directories-first'
 alias ll='exa -al --color=auto --group-directories-first --icons --group --git'
 alias bat="bat -P --color=auto"
