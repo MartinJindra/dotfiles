@@ -147,6 +147,10 @@ alias less="bat --color=auto --paging=always"
 alias cp="cp -v"
 alias rm="rm -v"
 alias mv="mv -v"
+alias gull="gl"
+alias gush="gp"
+alias gl="glols"
+alias giff="gd"
 alias icat="kitty +kitten icat"
 alias kdiff="kitty +kitten diff"
 alias remote_file="kitty +kitten remote_file"
@@ -170,3 +174,5 @@ tea_zsh="$USER/.config/tea/autocomplete.zsh"
 # broot
 broot_zsh="$USER/.config/broot/launcher/bash/br"
 [ -f "$tea_zsh" ] && source "$broot_zsh"
+
+pfetch
