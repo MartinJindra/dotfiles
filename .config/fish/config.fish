@@ -2,16 +2,22 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-set EDITOR "/usr/bin/nvim"
+#set VAGRANT_DEFAULT_PROVIDER virtualbox
 set pacpath /var/cache/pacman/pkg
 set EDITOR /usr/bin/nvim
 set VISUAL /usr/bin/nvim
 set TERM xterm-kitty
 set VAGRANT_DEFAULT_PROVIDER libvirt
 #set VAGRANT_DEFAULT_PROVIDER virtualbox
+set JAVA_HOME '/usr/lib/jvm/default'
+set ANDROID_SDK_ROOT '/opt/android-sdk'
+set PATH $PATH:$ANDROID_SDK_ROOT/emulator
+set PATH $PATH:$ANDROID_SDK_ROOT/platform-tools/
+set PATH $PATH:$ANDROID_SDK_ROOT/tools/bin/
+set PATH $PATH:$ANDROID_SDK_ROOT/tools/
+set PICO_SDK_PATH /opt/pico-sdk
 #set QT_STYLE_OVERRIDE adwaita-dark
 #set QT_STYLE_OVERRIDE kvantum
-set PICO_SDK_PATH /opt/pico-sdk
 
 alias zshconfig="$EDITOR ~/.zshrc"
 alias bashconfig="$EDITOR ~/.bashrc"
