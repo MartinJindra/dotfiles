@@ -112,6 +112,8 @@ export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export TERM=xterm-kitty
 export VAGRANT_DEFAULT_PROVIDER=libvirt
+export JAVA_HOME='/usr/lib/jvm/default'
+export ANDROID_SDK_ROOT='/opt/android-sdk'
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
@@ -175,4 +177,4 @@ tea_zsh="$USER/.config/tea/autocomplete.zsh"
 broot_zsh="$USER/.config/broot/launcher/bash/br"
 [ -f "$tea_zsh" ] && source "$broot_zsh"
 
-[ -x "$(command -v pfetch)" ] && pfetch
+[ -x "$(command -v neofetch)" ] && neofetch
