@@ -45,3 +45,5 @@ alias gl="git log --show-signature --stat --graph"
 
 starship init fish | source
 
+command -q neofetch && neofetch
+

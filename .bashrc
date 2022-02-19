@@ -185,3 +185,7 @@ ex ()
 
 # starship
 [[ -x "$(command -v starship)" ]] && eval "$(starship init bash)"
+
+# neofetch
+[ -x "$(command -v neofetch)" ] && neofetch
+

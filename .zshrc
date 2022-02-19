@@ -177,4 +177,6 @@ tea_zsh="$USER/.config/tea/autocomplete.zsh"
 broot_zsh="$USER/.config/broot/launcher/bash/br"
 [ -f "$tea_zsh" ] && source "$broot_zsh"
 
+# neofetch
 [ -x "$(command -v neofetch)" ] && neofetch
+
