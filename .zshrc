@@ -44,7 +44,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -115,10 +115,12 @@ export VAGRANT_DEFAULT_PROVIDER=libvirt
 #export VAGRANT_DEFAULT_PROVIDER=virtualbox
 export JAVA_HOME='/usr/lib/jvm/default'
 export ANDROID_SDK_ROOT='/opt/android-sdk'
+export CHROME_EXECUTABLE="$(which brave-browser)"
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
+export PATH=$PATH:$HOME/go/bin/
 export PICO_SDK_PATH=/opt/pico-sdk
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
@@ -161,7 +163,7 @@ alias ssh="kitty +kitten ssh"
 
 # Kitty terminal configuration
 autoload -Uz compinit
-compinit
+compinit -i
 
 # Completion for kitty
 [[ -x "$(command -v kitty)" ]] && kitty + complete setup zsh | source /dev/stdin
