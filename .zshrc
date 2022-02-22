@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="awesomepanda"
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -115,7 +115,7 @@ export VAGRANT_DEFAULT_PROVIDER=libvirt
 #export VAGRANT_DEFAULT_PROVIDER=virtualbox
 export JAVA_HOME='/usr/lib/jvm/default'
 export ANDROID_SDK_ROOT='/opt/android-sdk'
-export CHROME_EXECUTABLE="$(which brave-browser)"
+export CHROME_EXECUTABLE="$(which chromium)"
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
@@ -169,7 +169,7 @@ compinit -i
 [[ -x "$(command -v kitty)" ]] && kitty + complete setup zsh | source /dev/stdin
 
 # starship
-#[[ -x "$(command -v starship)" ]] && eval "$(starship init zsh)"
+[[ -x "$(command -v starship)" ]] && eval "$(starship init zsh)"
 
 # import tea autocompletion
 tea_zsh="$USER/.config/tea/autocomplete.zsh"
