@@ -18,7 +18,7 @@ display_private = true
 format = '$all'
 
 [time]
-disabled = false
+disabled = true
 
 [username]
 style_user = 'white bold'
