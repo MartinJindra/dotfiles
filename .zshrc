@@ -76,6 +76,7 @@ plugins=(
     github
     docker
     docker-compose
+    flutter
     colored-man-pages
     colorize
     zsh-interactive-cd
