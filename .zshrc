@@ -181,5 +181,11 @@ broot_zsh="$USER/.config/broot/launcher/bash/br"
 [ -f "$tea_zsh" ] && source "$broot_zsh"
 
 # neofetch
-[ -x "$(command -v neofetch)" ] && neofetch
+if [ -x "$(command -v neofetch)" ];
+then
+    neofetch
+elif [ -x "$(command -v pfetch)" ];
+then
+    pfetch
+fi
 
