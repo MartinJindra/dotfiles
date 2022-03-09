@@ -181,7 +181,7 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
 " => Vim-Instant-Markdown
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:instant_markdown_autostart = 0         " Turns off auto preview
-"let g:instant_markdown_browser = "surf"      " Uses surf for preview
+let g:instant_markdown_browser = "qutebrowser"      " Uses surf for preview
 let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
 "let g:instant_markdown_slow = 1
 "let g:instant_markdown_open_to_the_world = 1
