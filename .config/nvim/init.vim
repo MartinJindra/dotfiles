@@ -18,11 +18,10 @@ call plug#begin('~/.vim/plugged')
 "{{ The Basics }}
     Plug 'gmarik/Vundle.vim'                           " Vundle
     Plug 'itchyny/lightline.vim'                       " Lightline statusbar
-    Plug 'suan/vim-instant-markdown', {'rtp': 'after'} " Markdown Preview
+    Plug 'instant-markdown/vim-instant-markdown', {'for': ['markdown', 'markdown.pandoc']}
     Plug 'frazrepo/vim-rainbow'
 "{{ File management }}
-    Plug 'Mizuchi/vim-ranger'                          " Ranger 
-    "Plug 'vifm/vifm.vim'                              " Vifm
+    Plug 'vifm/vifm.vim'                              " Vifm
     Plug 'scrooloose/nerdtree'                         " Nerdtree
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'     " Highlighting Nerdtree
     Plug 'ryanoasis/vim-devicons'                      " Icons for Nerdtree
@@ -182,7 +181,17 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
 " => Vim-Instant-Markdown
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:instant_markdown_autostart = 0         " Turns off auto preview
-let g:instant_markdown_browser = "surf"      " Uses surf for preview
+"let g:instant_markdown_browser = "surf"      " Uses surf for preview
+let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
+"let g:instant_markdown_slow = 1
+"let g:instant_markdown_open_to_the_world = 1
+"let g:instant_markdown_allow_unsafe_content = 1
+"let g:instant_markdown_allow_external_content = 0
+let g:instant_markdown_mathjax = 1
+let g:instant_markdown_mermaid = 1
+"let g:instant_markdown_autoscroll = 0
+"let g:instant_markdown_port = 8888
+"let g:instant_markdown_python = 1
 map <Leader>md :InstantMarkdownPreview<CR>   " Previews .md file
 map <Leader>ms :InstantMarkdownStop<CR>      " Kills the preview
 
