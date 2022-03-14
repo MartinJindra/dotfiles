@@ -8,6 +8,8 @@ if status is-interactive
     set TERM xterm-kitty
     set VAGRANT_DEFAULT_PROVIDER libvirt
     #set VAGRANT_DEFAULT_PROVIDER virtualbox
+
+    set CHROME_EXECUTABLE /usr/bin/brave
     set JAVA_HOME '/usr/lib/jvm/default'
     set ANDROID_SDK_ROOT '/opt/android-sdk'
     set PATH $PATH:$ANDROID_SDK_ROOT/emulator
@@ -15,6 +17,7 @@ if status is-interactive
     set PATH $PATH:$ANDROID_SDK_ROOT/tools/bin/
     set PATH $PATH:$ANDROID_SDK_ROOT/tools/
     set PICO_SDK_PATH /opt/pico-sdk
+    set XDG_DATA_DIRS /home/martin/.local/share/flatpak/exports/share
     #set QT_STYLE_OVERRIDE adwaita-dark
     #set QT_STYLE_OVERRIDE kvantum
     
