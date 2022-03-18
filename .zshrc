@@ -77,12 +77,13 @@ plugins=(
     docker
     docker-compose
     vagrant
-    flutter
     colored-man-pages
     colorize
     zsh-interactive-cd
     alias-finder
     command-not-found
+    yarn
+    react-native
 )
 
 source $ZSH/oh-my-zsh.sh
