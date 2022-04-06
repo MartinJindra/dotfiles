@@ -217,6 +217,8 @@ autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set splitbelow splitright
 
+tnoremap <Esc> <C-\><C-n>
+
 " Remap splits navigation to just CTRL + hjkl
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -248,7 +250,8 @@ set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
-set guifont=SauceCodePro\ Nerd\ Font:h12
+set guifont=Fira\ Code:h6
+"set guifont=SourceCodePro\ Nerd\ Font:h12
 "set guifont=Mononoki\ Nerd\ Font:h15
 "set guifont=JetBrains\ Mono:h15
 
