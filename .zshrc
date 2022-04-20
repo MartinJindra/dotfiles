@@ -149,6 +149,7 @@ export PICO_SDK_PATH=/opt/pico-sdk
 # Example aliases
 alias ls='exa --color=auto --group-directories-first'
 alias ll='exa -al --color=auto --group-directories-first --icons --group --git'
+alias df='duf'
 alias bat="bat -P --color=auto"
 alias less="bat --color=auto --paging=always"
 alias cp="cp -v"
