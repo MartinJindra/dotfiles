@@ -163,7 +163,7 @@ alias icat="kitty +kitten icat"
 alias kdiff="kitty +kitten diff"
 alias remote_file="kitty +kitten remote_file"
 alias hints="kitty +kitten hints"
-alias ssh="kitty +kitten ssh"
+alias ksh="kitty +kitten ssh"
 
 # Kitty terminal configuration
 autoload -Uz compinit
