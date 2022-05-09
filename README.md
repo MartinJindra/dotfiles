@@ -15,7 +15,7 @@ For a quick installation of the config files you can clone this repo with `yadm`
 For ease of use use [yadm](https://github.com/TheLocehiliosan/yadm).
 
 ```
-yadm clone https://git.derchef.site/derchef/dotfiles
+yadm clone https://git.mjindra.eu/derchef/dotfiles
 yadm submodule update --init
 ```
 
