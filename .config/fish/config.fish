@@ -5,7 +5,6 @@ if status is-interactive
     set pacpath /var/cache/pacman/pkg
     set EDITOR /usr/bin/nvim
     set VISUAL /usr/bin/nvim
-    set TERM xterm-kitty
     set VAGRANT_DEFAULT_PROVIDER libvirt
     #set VAGRANT_DEFAULT_PROVIDER virtualbox
 
