@@ -117,11 +117,10 @@ if ! shopt -oq posix; then
 fi
 
 # Environment variables
-export pacpath=/var/cache/pacman/pkg
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
-export VAGRANT_DEFAULT_PROVIDER=libvirt
-export PICO_SDK_PATH=/opt/pico-sdk
+#export VAGRANT_DEFAULT_PROVIDER=libvirt
+#export PICO_SDK_PATH=/opt/pico-sdk
 #export VAGRANT_DEFAULT_PROVIDER=virtualbox
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
@@ -129,9 +128,9 @@ export PICO_SDK_PATH=/opt/pico-sdk
 alias cp="cp -vi"
 alias rm="rm -vi"
 alias mv="mv -vi"
-alias ssh="kitty +kitten ssh"
+alias ksh="kitty +kitten ssh"
 alias gitu='git add . && git commit && git push'
-alias gadd="git add"
+alias ga="git add"
 alias gc="git commit"
 alias gull="git pull"
 alias gush="git push"
