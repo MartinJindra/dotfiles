@@ -1,10 +1,10 @@
-"  ____ _____ 
+"  ____ _____
 " |  _ \_   _|  Derek Taylor (DistroTube)
 " | | | || |    http://www.youtube.com/c/DistroTube
 " | |_| || |    http://www.gitlab.com/dwt1/
 " |____/ |_|
-"        
-" A customized init.vim for neovim (https://neovim.io/)     
+"
+" A customized init.vim for neovim (https://neovim.io/)
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -16,29 +16,32 @@ filetype off                  " required
 call plug#begin('~/.vim/plugged')
 
 "{{ The Basics }}
-    Plug 'gmarik/Vundle.vim'                           " Vundle
-    Plug 'itchyny/lightline.vim'                       " Lightline statusbar
+    Plug 'gmarik/Vundle.vim'                            " Vundle
+    Plug 'itchyny/lightline.vim'                        " Lightline statusbar
     Plug 'instant-markdown/vim-instant-markdown', {'for': ['markdown', 'markdown.pandoc']}
     Plug 'frazrepo/vim-rainbow'
 "{{ File management }}
-    Plug 'vifm/vifm.vim'                              " Vifm
-    Plug 'scrooloose/nerdtree'                         " Nerdtree
-    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'     " Highlighting Nerdtree
-    Plug 'ryanoasis/vim-devicons'                      " Icons for Nerdtree
+    Plug 'vifm/vifm.vim'                                " Vifm
+    Plug 'scrooloose/nerdtree'                          " Nerdtree
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'      " Highlighting Nerdtree
+    Plug 'ryanoasis/vim-devicons'                       " Icons for Nerdtree
 "{{ Productivity }}
-    Plug 'vimwiki/vimwiki'                             " VimWiki 
-    Plug 'jreybert/vimagit'                            " Magit-like plugin for vim
+    Plug 'vimwiki/vimwiki'                              " VimWiki
+    Plug 'jreybert/vimagit'                             " Magit-like plugin for vim
 "{{ Tim Pope Plugins }}
-    Plug 'tpope/vim-surround'                          " Change surrounding marks
+    Plug 'tpope/vim-surround'                           " Change surrounding marks
 "{{ Syntax Highlighting and Colors }}
-    Plug 'PotatoesMaster/i3-vim-syntax'                " i3 config highlighting
-    Plug 'kovetskiy/sxhkd-vim'                         " sxhkd highlighting
-    Plug 'vim-python/python-syntax'                    " Python highlighting
-    Plug 'ap/vim-css-color'                            " Color previews for CSS
+    Plug 'PotatoesMaster/i3-vim-syntax'                 " i3 config highlighting
+    Plug 'kovetskiy/sxhkd-vim'                          " sxhkd highlighting
+    Plug 'vim-python/python-syntax'                     " Python highlighting
+    Plug 'ap/vim-css-color'                             " Color previews for CSS
 "{{ Junegunn Choi Plugins }}
-    Plug 'junegunn/goyo.vim'                           " Distraction-free viewing
-    Plug 'junegunn/limelight.vim'                      " Hyperfocus on a range
-    Plug 'junegunn/vim-emoji'                          " Vim needs emojis!
+    Plug 'junegunn/goyo.vim'                            " Distraction-free viewing
+    Plug 'junegunn/limelight.vim'                       " Hyperfocus on a range
+    Plug 'junegunn/vim-emoji'                           " Vim needs emojis!
+"{{ Python }}
+    Plug 'vim-scripts/indentpython.vim'                 " Autocompletion
+
 
 call plug#end()
 
@@ -68,6 +71,9 @@ set t_Co=256                    " Set if term supports 256 colors.
 set number relativenumber       " Display line numbers
 set clipboard=unnamedplus       " Copy/paste between vim and other programs.
 set ignorecase                  " Disable case sensitv search
+set foldmethod=indent           " Enable code folding
+set foldlevel=99
+nnoremap <space> za             " Enable folding with spacebar
 syntax enable
 let g:rehash256 = 1
 
@@ -198,8 +204,8 @@ map <Leader>ms :InstantMarkdownStop<CR>      " Kills the preview
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Open terminal inside Vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <Leader>tt :vnew term://zsh<CR>
-map <Leader>t :split term://zsh<CR>
+map <Leader>tt :vnew term://bash<CR>
+map <Leader>t :split term://bash<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mouse Scrolling
@@ -236,14 +242,14 @@ map <Leader>th <C-w>t<C-w>H
 map <Leader>tk <C-w>t<C-w>K
 
 " Removes pipes | that act as seperators on splits
-set fillchars+=vert:\ 
+set fillchars+=vert:\
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Other Stuff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:python_highlight_all = 1
 
-au! BufRead,BufWrite,BufWritePost,BufNewFile *.org 
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 au BufEnter *.org            call org#SetOrgFileType()
 
 set guioptions-=m  "remove menu bar
