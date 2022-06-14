@@ -39,9 +39,14 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/goyo.vim'                            " Distraction-free viewing
     Plug 'junegunn/limelight.vim'                       " Hyperfocus on a range
     Plug 'junegunn/vim-emoji'                           " Vim needs emojis!
+"{{ Git Integration }}
+    Plug 'tpope/vim-fugitive'                           " Git Integration
+"{{ Super Searching }}
+    Plug 'kien/ctrlp.vim'                               " super Searching
 "{{ Python }}
-    Plug 'vim-scripts/indentpython.vim'                 " Autocompletion
-
+    Plug 'vim-scripts/indentpython.vim'                 " Autoindent
+    Plug 'Valloric/YouCompleteMe'                       " Autocomplete
+    Plug 'nvie/vim-flake8'                              " PEP 8 checking
 
 call plug#end()
 
@@ -73,6 +78,7 @@ set clipboard=unnamedplus       " Copy/paste between vim and other programs.
 set ignorecase                  " Disable case sensitv search
 set foldmethod=indent           " Enable code folding
 set foldlevel=99
+let python_highlight_all=1
 nnoremap <space> za             " Enable folding with spacebar
 syntax enable
 let g:rehash256 = 1
@@ -104,6 +110,17 @@ set expandtab                   " Use spaces instead of tabs.
 set smarttab                    " Be smart using tabs ;)
 set shiftwidth=4                " One tab == four spaces.
 set tabstop=4                   " One tab == four spaces.
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Python IDE
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" The first line ensure
+" that the auto-complete window goes awa
+" when you’re done with it
+" and the second defines a shortcut for goto definition.
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
