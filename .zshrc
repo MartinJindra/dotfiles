@@ -191,5 +191,3 @@ then
     pfetch
 fi
 
-
-[ -f "/home/martin/.ghcup/env" ] && source "/home/martin/.ghcup/env" # ghcup-env
