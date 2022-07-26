@@ -82,8 +82,7 @@ plugins=(
     zsh-interactive-cd
     alias-finder
     command-not-found
-    yarn
-    react-native
+    flutter
 )
 
 source $ZSH/oh-my-zsh.sh
