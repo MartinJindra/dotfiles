@@ -242,6 +242,9 @@ set splitbelow splitright
 
 tnoremap <Esc> <C-\><C-n>
 
+
+map <C-t> :tabnew<CR>
+
 " Remap splits navigation to just CTRL + hjkl
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
