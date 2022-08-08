@@ -203,7 +203,7 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim-Instant-Markdown
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:instant_markdown_autostart = 1         " Turns on auto preview
+let g:instant_markdown_autostart = 0         " Turns on auto preview
 let g:instant_markdown_browser = "min"       " Uses min for preview
 let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
 "let g:instant_markdown_slow = 1
