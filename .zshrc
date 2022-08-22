@@ -123,6 +123,7 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
 export PATH=$PATH:$HOME/go/bin/
 export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.local/bin
 export PICO_SDK_PATH=/opt/pico-sdk
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
