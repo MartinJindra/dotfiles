@@ -119,24 +119,39 @@ fi
 # Environment variables
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
-#export VAGRANT_DEFAULT_PROVIDER=libvirt
-#export PICO_SDK_PATH=/opt/pico-sdk
-#export VAGRANT_DEFAULT_PROVIDER=virtualbox
+export VAGRANT_DEFAULT_PROVIDER=libvirt
+export PICO_SDK_PATH=/opt/pico-sdk
+export JAVA_HOME='/usr/lib/jvm/default'
+export ANDROID_SDK_ROOT='/opt/android-sdk'
+export CHROME_EXECUTABLE="$(which chromium)"
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
+export PATH=$PATH:$HOME/go/bin/
+export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.local/bin
+export PICO_SDK_PATH=/opt/pico-sdk
 #export QT_STYLE_OVERRIDE=adwaita-dark
 #export QT_STYLE_OVERRIDE=kvantum
 
-alias cp="cp -vi"
-alias rm="rm -vi"
-alias mv="mv -vi"
-alias ksh="kitty +kitten ssh"
-alias gitu='git add . && git commit && git push'
-alias ga="git add"
-alias gc="git commit"
+alias ls='exa --color=auto --group-directories-first'
+alias ll='exa -al --color=auto --group-directories-first --icons --group --git'
+alias df='duf'
+alias bat="bat -P --color=auto"
+alias less="bat --color=auto --paging=always"
+alias cp="cp -v"
+alias rm="rm -v"
+alias mv="mv -v"
 alias gull="git pull"
 alias gush="git push"
-alias gst="git status"
-alias giff="git diff"
 alias gl="git log --show-signature --stat --graph"
+alias giff="gd --word-diff"
+alias icat="kitty +kitten icat"
+alias kdiff="kitty +kitten diff"
+alias remote_file="kitty +kitten remote_file"
+alias hints="kitty +kitten hints"
+alias ksh="kitty +kitten ssh"
 
 complete -cf sudo
 
