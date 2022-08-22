@@ -189,6 +189,10 @@ ex ()
 # github-cli
 [[ -x "$(command -v gh)" ]] && eval "$(gh completion -s bash)"
 
+# gitea
+
+[[ -x "$(command -v tea)" ]] && PROG=tea source "$HOME/.config/tea/autocomplete.sh"
+
 # kitty terminal
 [[ -x "$(command -v kitty)" ]] && source <(kitty + complete setup bash)
 
