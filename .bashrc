@@ -178,6 +178,9 @@ ex ()
 # rustup
 [[ -x "$(command -v rustup)" ]] && eval "$(rustup completions bash)"
 
+# flutter
+[[ -x "$(command -v flutter)" ]] && eval "$(flutter bash-completion)"
+
 # broot
 [[ -x "$(command -v broot)" ]] && source $HOME/.config/broot/launcher/bash/br
 
