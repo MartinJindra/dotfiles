@@ -221,8 +221,8 @@ map <Leader>ms :InstantMarkdownStop<CR>      " Kills the preview
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Open terminal inside Vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <Leader>tt :vnew term://bash<CR>
-map <Leader>t :split term://bash<CR>
+map <Leader>tt :vnew term://zsh<CR>
+map <Leader>t :split term://zsh<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mouse Scrolling
