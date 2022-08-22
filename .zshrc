@@ -172,9 +172,6 @@ compinit -i
 # Completion for kitty
 [[ -x "$(command -v kitty)" ]] && kitty + complete setup zsh | source /dev/stdin
 
-# starship
-[[ -x "$(command -v starship)" ]] && eval "$(starship init zsh)"
-
 # import tea autocompletion
 tea_zsh="$USER/.config/tea/autocomplete.zsh"
 [ -f "$tea_zsh" ] && PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 source "$tea_zsh"
@@ -191,4 +188,8 @@ elif [ -x "$(command -v pfetch)" ];
 then
     pfetch
 fi
+
+# starship
+[[ -x "$(command -v starship)" ]] && eval "$(starship init zsh)"
+
 
