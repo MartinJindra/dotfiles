@@ -192,7 +192,6 @@ ex ()
 [[ -x "$(command -v gh)" ]] && eval "$(gh completion -s bash)"
 
 # gitea
-
 [[ -x "$(command -v tea)" ]] && PROG=tea source "$HOME/.config/tea/autocomplete.sh"
 
 # kitty terminal
@@ -203,9 +202,6 @@ ex ()
 
 # flutter
 [[ -x "$(command -v flutter)" ]] && eval "$(flutter bash-completion)"
-
-# broot
-[[ -x "$(command -v broot)" ]] && source $HOME/.config/broot/launcher/bash/br
 
 # starship
 [[ -x "$(command -v starship)" ]] && eval "$(starship init bash)"
