@@ -30,9 +30,10 @@ if status is-interactive
     end
 
     ## Paths
-    set -g --path ANDROID_SDK_ROOT /opt/android-sdk
+    set -gx --path ANDROID_SDK_ROOT /opt/android-sdk
     fish_add_path -P "$HOME/.local/bin"
     fish_add_path -P "$HOME/.cargo/bin"
+    fish_add_path -P "$HOME/.yarn/bin"
     fish_add_path -P "$HOME/go/bin"
     fish_add_path -P "$ANDROID_SDK_ROOT/emulator"
     fish_add_path -P "$ANDROID_SDK_ROOT/platform-tools"
