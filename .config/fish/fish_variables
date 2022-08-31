@@ -6,6 +6,9 @@ SETUVAR --export --path PICO_SDK_PATH:/opt/pico\x2dsdk
 SETUVAR --export VAGRANT_DEFAULT_PROVIDER:libvirt
 SETUVAR --export VISUAL:/usr/bin/nvim
 SETUVAR __fish_initialized:3400
+SETUVAR _fisher_brgmnn_2F_fish_2D_docker_2D_compose_files:\x7e/\x2econfig/fish/completions/docker\x2dcompose\x2efish
+SETUVAR _fisher_plugins:brgmnn/fish\x2ddocker\x2dcompose
+SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:707A8C
 SETUVAR fish_color_cancel:\x2d\x2dreverse
 SETUVAR fish_color_command:5CCFE6
