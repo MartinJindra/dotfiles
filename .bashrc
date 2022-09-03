@@ -201,7 +201,7 @@ ex ()
 [[ -x "$(command -v rustup)" ]] && eval "$(rustup completions bash)"
 
 # flutter
-[[ -x "$(command -v flutter)" ]] && eval "$(flutter bash-completion)"
+[[ $($(which id) -u) -ne 0 ]] && [[ $($(which id) -u) -ne 0 ]] && [[ -x "$(command -v flutter)" ]] && eval "$(flutter bash-completion)"
 
 # starship
 [[ -x "$(command -v starship)" ]] && eval "$(starship init bash)"
