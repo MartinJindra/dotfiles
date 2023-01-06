@@ -19,6 +19,6 @@ yadm clone https://git.mjindra.eu/derchef/dotfiles
 yadm submodule update --init
 ```
 
-## Vim 
+## Neovim
 
-Extra Vim config [online](https://realpython.com/vim-and-python-a-match-made-in-heaven/#auto-complete)
+Checkout the awesome neovim config that I use. Credit to NvChad for their [config](https://github.com/NvChad/NvChad.git).
