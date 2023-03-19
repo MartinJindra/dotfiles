@@ -1,7 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:/usr/bin/nvim
-SETUVAR --export --path JAVA_HOME:/usr/lib/jvm/default
+SETUVAR --export --path JAVA_HOME:/usr/lib/jvm/java
 SETUVAR --export --path PICO_SDK_PATH:/opt/pico\x2dsdk
 SETUVAR --export VAGRANT_DEFAULT_PROVIDER:libvirt
 SETUVAR --export VISUAL:/usr/bin/nvim
