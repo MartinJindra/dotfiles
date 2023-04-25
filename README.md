@@ -16,9 +16,6 @@ For ease of use use [yadm](https://github.com/TheLocehiliosan/yadm).
 
 ```
 yadm clone https://git.mjindra.eu/derchef/dotfiles
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 yadm submodule update --init
 ```
-
-## Neovim
-
-Checkout the awesome neovim config that I use. Credit to NvChad for their [config](https://github.com/NvChad/NvChad.git).
