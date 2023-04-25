@@ -1,6 +1,3 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh
-[submodule ".config/nvim"]
-	path = .config/nvim
-	url = https://github.com/NvChad/NvChad.git
